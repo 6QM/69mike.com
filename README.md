@@ -1,2 +1,2 @@
 # personla-web
-This is only used for my personnal web site: ```69mike.com``` .
+This is only used for my personal web site: ```69mike.com``` .
