@@ -137,6 +137,7 @@
     color: gold;
     writing-mode: vertical-rl;
     text-orientation: mixed;
+    font-size: small;
   }
 
   .spine-author {
