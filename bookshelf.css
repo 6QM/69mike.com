@@ -6,6 +6,7 @@
         transparent 1px,
         transparent 60px
       ),
+
       repeating-linear-gradient(
         60deg,
         rgba(255, 255, 255, 0.1),
@@ -13,6 +14,7 @@
         transparent 1px,
         transparent 60px
       ),
+
       linear-gradient(
         60deg,
         rgba(0, 0, 0, 0.1) 25%,
@@ -53,6 +55,7 @@
         rgba(0, 0, 0, 0.5) 232px,
         transparent 232px
       ),
+
       repeating-linear-gradient(
         270deg,
         transparent,
@@ -141,6 +144,7 @@
     color: goldenrod;
     bottom: 0px;
     left: 20%; /* no idea why 20% centers it */
+    font-size: x-small; /*font-size is changed into x-small*/
   }
 
   .top {
