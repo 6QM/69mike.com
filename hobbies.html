@@ -11,6 +11,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Ma+Shan+Zheng&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
   <!-- Below is bookshelf style -->
   <link rel="stylesheet" href="bookshelf.css">
+  <style media="screen">
+    h3 {
+
+      /* text-decoration-line: underline overline; */
+      /* text-decoration-color: #21ff21; */
+      /* text-decoration-color: rgb(255, 90, 255); */
+      color: black;
+      /* text-decoration-line: underline; */
+    }
+
+    .bridge {
+      margin: 0 60px 0 60px;
+    }
+    /* from left to right defer to: clockwise direction */
+  </style>
 </head>
 
 <body>
@@ -23,6 +38,7 @@
   </ul>
   <!-- Top-Navigation -->
   <h3>My Hobbies</h3>
+
   <ul>
     <li>📖 Reading books (especially about personal development). Welcome to visit <a href="https://i69mike.notion.site/dc9dbcf8ea4e4aec988753657af34201?v=6db3c197f64544dbb4c4310ae7ac684e">John Mike's Library</a>. <br>
 
@@ -33,587 +49,711 @@
     <li>✍ Writing Diary and record something expressive (for deep thinking and life-long run). Welcome to read <a href="https://github.com/6QM/iDiary">John Mike's Diary</a>.</li>
     </ol>
 
-    <h2>John MIke's Bookshelf (From 2017 to 2022)</h2>
+    <h2><img src="images/book_plate.svg" alt="This book belongs to the love reading cat" width="200px" height="auto">John MIke's Bookshelf (From 2017 to 2022)</h2>
 
-    <h3>What books I've finished reading in 2017</h3>
+    <h3>What books I've finished reading in 2017📚🔰</h3>
 
-    <!-- bookshelf start here -->
-    <div class="bookshelf">
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《做最好的自己》</span>
-          <span class="spine-author">李开复</span>
+
+    <br>
+    <!-- Use br<> element tp keep a nice gap between two close tittle -->
+    <!-- The outlier is bookshelf image, the <div></div> element is used -->
+    <div class="background-bookshelf" style="background-size: 925px 280px;">
+      <!-- The first value of background-size represent the width of the bg-bookshelf when the book list is too long, just change this value to make a  proper adjustment. -->
+      <!-- bookshelf start here -->
+      <div class="bookshelf" style="position: relative; left: 30px; bottom:35px;">
+        <!-- change the px value to control the books' relative position, especially the left value -->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《做最好的自己》</span>
+            <span class="spine-author">李开复</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="background-image: url('images/best-self.jpg'); "></div>
+
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="background-image: url('images/best-self.jpg'); "></div>
+        <!-- Add a new book above ↑ ↑ ↑-->
 
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《常识》</span>
-          <span class="spine-author">(US)托马斯·藩恩</span>
-        </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《常识》</span>
+            <span class="spine-author">(US)托马斯·藩恩</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
         background-image: url('images/commonsense.jpg');
         "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《万历十五年》</span>
-          <span class="spine-author">黄仁宇</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《万历十五年》</span>
+            <span class="spine-author">黄仁宇</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
         background-image: url('images/wanli.jpg');
         "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《历史深处的忧虑》</span>
-          <span class="spine-author">林达</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《历史深处的忧虑》</span>
+            <span class="spine-author">林达</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
         background-image: url('images/lishi.jpg');
         "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《流血的仕途》(上)</span>
-          <span class="spine-author">曹昇</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《流血的仕途》(上)</span>
+            <span class="spine-author">曹昇</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
         background-image: url('images/liuxue.jpg');
         "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《学会提问》(原书第10版)</span>
-          <span class="spine-author">(US)尼尔·布朗</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《学会提问》(原书第10版)</span>
+            <span class="spine-author">(US)尼尔·布朗</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
         background-image: url('images/tiwen.jpg');
         "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《精进：如何成为一个很厉害的人》</span>
-          <span class="spine-author">采铜</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《精进：如何成为一个很厉害的人》</span>
+            <span class="spine-author">采铜</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
         background-image: url('images/jingjin.jpg');
         "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《商业的本质》</span>
-          <span class="spine-author">(US)杰克·韦尔奇</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《商业的本质》</span>
+            <span class="spine-author">(US)杰克·韦尔奇</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
         background-image: url('images/shangye.jpg');
         "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《读大学，究竟读什么》</span>
-          <span class="spine-author">覃彪喜</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《读大学，究竟读什么》</span>
+            <span class="spine-author">覃彪喜</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
         background-image: url('images/dudaxue.jpg');
         "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《大学生的坟》</span>
-          <span class="spine-author">刘兴奇</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《大学生的坟》</span>
+            <span class="spine-author">刘兴奇</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
         background-image: url('images/daxuesheng.jpg');
         "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-
-    </div>
-    <!-- bookshelf ends here -->
-
-
-    <h3>What books I've finished reading in 2018</h3>
-    <!-- bookshelf start here -->
-    <div class="bookshelf">
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《苏东坡传》</span>
-          <span class="spine-author">林语堂</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+
+      </div>
+      <!-- bookshelf ends here -->
+    </div>
+
+    <h3>What books I've finished reading in 2018📚🔰</h3>
+    <br>
+    <!-- bookshelf start here -->
+    <div class="background-bookshelf" style="background-size: 925px 280px;">
+      <div class="bookshelf" style="position: relative; left: 30px; bottom:35px;">
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《苏东坡传》</span>
+            <span class="spine-author">林语堂</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
             background-image: url('images/sudong.jpg');
             "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《人间失格》</span>
-          <span class="spine-author">(JP)太宰治</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《人间失格》</span>
+            <span class="spine-author">(JP)太宰治</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
             background-image: url('images/renjian.jpg');
             "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《人生》</span>
-          <span class="spine-author">路遥</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《人生》</span>
+            <span class="spine-author">路遥</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
             background-image: url('images/rensheng.jpg');
             "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《万万没有想到》</span>
-          <span class="spine-author">万维钢</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《万万没有想到》</span>
+            <span class="spine-author">万维钢</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
             background-image: url('images/wanwan.jpg');
             "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《房思琪的初恋乐园》</span>
-          <span class="spine-author">李奕含</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《房思琪的初恋乐园》</span>
+            <span class="spine-author">李奕含</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
             background-image: url('images/fangsiqi.jpg');
             "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《娱乐至死》</span>
-          <span class="spine-author">(US)尼尔·波兹曼</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《娱乐至死》</span>
+            <span class="spine-author">(US)尼尔·波兹曼</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
             background-image: url('images/yule.jpg');
             "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《我们生活在巨大的差距里》</span>
-          <span class="spine-author">余华</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《我们生活在巨大的差距里》</span>
+            <span class="spine-author">余华</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
             background-image: url('images/women.jpg');
             "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《小王子》</span>
-          <span class="spine-author">(FR)圣埃克苏佩里</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《小王子》</span>
+            <span class="spine-author">(FR)圣埃克苏佩里</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
             background-image: url('images/xiao.jpg');
             "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《动物农场》</span>
-          <span class="spine-author">(英)乔治.奥威尔</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《动物农场》</span>
+            <span class="spine-author">(英)乔治.奥威尔</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
             background-image: url('images/dongwu.jpg');
             "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《情人》</span>
-          <span class="spine-author">(FR)玛格丽特·杜拉斯</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《情人》</span>
+            <span class="spine-author">(FR)玛格丽特·杜拉斯</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
             background-image: url('images/qingren.jpg');
             "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《阿城精选集》</span>
-          <span class="spine-author">阿城</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《阿城精选集》</span>
+            <span class="spine-author">阿城</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
             background-image: url('images/acheng.jpg');
             "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《活出生命的意义》</span>
-          <span class="spine-author">(US)维多克·弗兰克尔</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《活出生命的意义》</span>
+            <span class="spine-author">(US)维多克·弗兰克尔</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
             background-image: url('images/huochu.jpg');
             "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《小狗钱钱1》</span>
-          <span class="spine-author">(DE)舍费尔</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《小狗钱钱1》</span>
+            <span class="spine-author">(DE)舍费尔</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
                       background-image: url('images/xiaogou1.jpg');
                       "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《小狗钱钱2》</span>
-          <span class="spine-author">(DE)舍费尔</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《小狗钱钱2》</span>
+            <span class="spine-author">(DE)舍费尔</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
                       background-image: url('images/xiaogou2.jpg');
                       "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《活着》</span>
-          <span class="spine-author">余华</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《活着》</span>
+            <span class="spine-author">余华</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
                       background-image: url('images/huozhe.jpg');
                       "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《了不起的盖茨比》</span>
-          <span class="spine-author">(US)斯科特·菲兹杰拉德</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《了不起的盖茨比》</span>
+            <span class="spine-author">(US)斯科特·菲兹杰拉德</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
                       background-image: url('images/liaobuqi.jpg');
                       "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《七堂极简物理课》</span>
-          <span class="spine-author">(意)卡洛·罗韦利</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《七堂极简物理课》</span>
+            <span class="spine-author">(意)卡洛·罗韦利</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
                       background-image: url('images/qitang.jpg');
                       "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-    </div>
-    <!-- bookshelf ends here -->
-
-    <h3>What books I've finished reading in 2019</h3>
-
-    <!-- bookshelf start here -->
-    <div class="bookshelf" style="background-image: url('images/crop.jpg') no-repeat; background-size: 100%;">
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《孤独的质数》</span>
-          <span class="spine-author">(IT)保罗·乔尔达诺</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+      </div>
+      <!-- bookshelf ends here -->
+    </div>
+
+
+    <h3>What books I've finished reading in 2019📚🔰</h3>
+    <br>
+    <div class="background-bookshelf" style="background-size: 925px 280px;">
+      <!-- bookshelf start here -->
+      <div class="bookshelf" style="position: relative; left: 30px; bottom:35px;">
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《孤独的质数》</span>
+            <span class="spine-author">(IT)保罗·乔尔达诺</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
             background-image: url('images/sudong.jpg');
             "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《特斯拉自传》</span>
-          <span class="spine-author">(US)尼古拉·特斯拉</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《特斯拉自传》</span>
+            <span class="spine-author">(US)尼古拉·特斯拉</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
             background-image: url('images/renjian.jpg');
             "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《时间管理》</span>
-          <span class="spine-author">(US)吉姆·兰德尔</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《时间管理》</span>
+            <span class="spine-author">(US)吉姆·兰德尔</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
             background-image: url('images/rensheng.jpg');
             "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《现在的泪，都是当年脑子进的水》</span>
-          <span class="spine-author">马兴华</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《现在的泪，都是当年脑子进的水》</span>
+            <span class="spine-author">马兴华</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
             background-image: url('images/wanwan.jpg');
             "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《把你的词汇用起来》</span>
-          <span class="spine-author">伍军仪</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《把你的词汇用起来》</span>
+            <span class="spine-author">伍军仪</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
             background-image: url('images/fangsiqi.jpg');
             "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《一本书读懂财报》</span>
-          <span class="spine-author">肖星</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《一本书读懂财报》</span>
+            <span class="spine-author">肖星</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
             background-image: url('images/yule.jpg');
             "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《万物简史》</span>
-          <span class="spine-author">(US)比尔·布莱森</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《万物简史》</span>
+            <span class="spine-author">(US)比尔·布莱森</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
             background-image: url('images/women.jpg');
             "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《优秀到不能被忽略》</span>
-          <span class="spine-author">(US)卡尔·纽波特</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《优秀到不能被忽略》</span>
+            <span class="spine-author">(US)卡尔·纽波特</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
             background-image: url('images/xiao.jpg');
             "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《自省之书》</span>
-          <span class="spine-author">(FR)让-雅克·卢梭</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《自省之书》</span>
+            <span class="spine-author">(FR)让-雅克·卢梭</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
             background-image: url('images/dongwu.jpg');
             "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《论人类不平等的起源和基础》</span>
-          <span class="spine-author">(FR)让-雅克·卢梭</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《论人类不平等的起源和基础》</span>
+            <span class="spine-author">(FR)让-雅克·卢梭</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
             background-image: url('images/qingren.jpg');
             "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《终身学习》</span>
-          <span class="spine-author">(US)丹·苏利文</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《终身学习》</span>
+            <span class="spine-author">(US)丹·苏利文</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
             background-image: url('images/acheng.jpg');
             "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《送你一颗子弹》</span>
-          <span class="spine-author">刘瑜</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《送你一颗子弹》</span>
+            <span class="spine-author">刘瑜</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
             background-image: url('images/huochu.jpg');
             "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《英语阅读，看这本就够了》</span>
-          <span class="spine-author">(KR)李善玉</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《英语阅读，看这本就够了》</span>
+            <span class="spine-author">(KR)李善玉</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
                       background-image: url('images/xiaogou1.jpg');
                       "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《大学之路》</span>
-          <span class="spine-author">吴军</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《大学之路》</span>
+            <span class="spine-author">吴军</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
                       background-image: url('images/xiaogou2.jpg');
                       "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-    </div>
-    <!-- bookshelf ends here -->
-
-
-
-    <h3>What books I've finished reading in 2020</h3>
-<div class="bc-image"  style="align: center;background-image: url('images/crop.jpg'); background-repeat: no-repeat; background-size: 800px 280px; ">
-
-
-    <!-- bookshelf start here -->
-    <div class="bookshelf" style="position: relative; left: 200px; bottom:35px;">
-
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《管道的故事》</span>
-          <span class="spine-author">(US)贝克·哈吉斯</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+      </div>
+      <!-- bookshelf ends here -->
+    </div>
+
+
+    <h3>What books I've finished reading in 2020📚🔰</h3>
+    <br>
+    <div class="background-bookshelf" style="background-size: 925px 280px;">
+      <!-- bookshelf start here -->
+      <div class="bookshelf" style="position: relative; left: 30px; bottom:35px;">
+
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《管道的故事》</span>
+            <span class="spine-author">(US)贝克·哈吉斯</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
                       background-image: url('images/guandao.jpg');
                       "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《富爸爸穷爸爸》</span>
-          <span class="spine-author">(US)罗伯特·T·清崎</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《富爸爸穷爸爸》</span>
+            <span class="spine-author">(US)罗伯特·T·清崎</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
                       background-image: url('images/richdad.jpg');
                       "></div>
-      </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-      <!-- Add a new book below ↓ ↓ ↓ -->
-      <div class="book">
-        <div class="side spine">
-          <span class="spine-title">《七堂极简物理课》</span>
-          <span class="spine-author">(意)卡洛·罗韦利</span>
         </div>
-        <div class="side top"></div>
-        <div class="side cover" style="
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《致成长路上的你》</span>
+            <span class="spine-author">中国高等教育学会</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
                       background-image: url('images/qitang.jpg');
                       "></div>
+        </div>
+        <!-- Add a new book above ↑ ↑ ↑-->
       </div>
-      <!-- Add a new book above ↑ ↑ ↑-->
-
+      <!-- bookshelf ends here -->
     </div>
-    <!-- bookshelf ends here -->
-</div>
+
+    <br>
+    <h3>What books I've finished reading in 2021📚🔰</h3>
+    <br>
+    <div class="background-bookshelf" style="background-size: 925px 280px;">
+      <!-- bookshelf start here -->
+      <div class="bookshelf" style="position: relative; left: 30px; bottom:35px;">
+
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《把时间当作朋友》</span>
+            <span class="spine-author">李笑来</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
+                      background-image: url('images/guandao.jpg');
+                      "></div>
+        </div>
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《时间管理秘籍每天十分钟》</span>
+            <span class="spine-author">(US)Michal Stawicki）</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
+                      background-image: url('images/richdad.jpg');
+                      "></div>
+        </div>
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《20岁，光阴不再来》</span>
+            <span class="spine-author">(US)梅格·杰伊</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
+                      background-image: url('images/qitang.jpg');
+                      "></div>
+        </div>
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《洛克菲勒写给儿子的38封信》</span>
+            <span class="spine-author">(US)约翰·D·洛克菲勒</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
+                      background-image: url('images/qitang.jpg');
+                      "></div>
+        </div>
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《我生命里的光》</span>
+            <span class="spine-author">(JP)中村修二</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
+                      background-image: url('images/qitang.jpg');
+                      "></div>
+        </div>
+        <!-- Add a new book above ↑ ↑ ↑-->
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《在轮下》</span>
+            <span class="spine-author">(GM)赫尔曼•黑塞</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
+                      background-image: url('images/qitang.jpg');
+                      "></div>
+        </div>
+        <!-- Add a new book above ↑ ↑ ↑-->
+      </div>
+      <!-- bookshelf ends here -->
+    </div>
+
+    <br>
+    <h3>What books I've finished reading in 2022📚🔰</h3>
+    <br>
+    <div class="background-bookshelf" style="background-size: 925px 280px;">
+      <!-- bookshelf start here -->
+      <div class="bookshelf" style="position: relative; left: 30px; bottom:35px;">
+
+        <!-- Add a new book below ↓ ↓ ↓ -->
+        <div class="book">
+          <div class="side spine">
+            <span class="spine-title">《知道做到》</span>
+            <span class="spine-author">(US)肯·布兰佳</span>
+          </div>
+          <div class="side top"></div>
+          <div class="side cover" style="
+                          background-image: url('images/guandao.jpg');
+                          "></div>
+        </div>
+        <!-- Add a new book above ↑ ↑ ↑-->
+
+
+
+      </div>
+      <!-- bookshelf ends here -->
+    </div>
 
     <!-- 行间style:将link保持浮动在页面的左下角 -->
     <div class="" style="margin-top: 50px;">
+      <img src="images/ladyandbook.svg" alt="This book belongs to the love reading cat" width="150px" height="auto">
+      <!-- <img class="bridge" src="images/Stylized-Bridge-Silhouette.svg" alt="This book belongs to the love reading cat" width="170px" height="auto"> -->
+        <img class="bridge" src="images/bridge-02.svg" alt="This book belongs to the love reading cat" width="500px" height="auto">
+      <img src="images/cloakedreading.svg" alt="This book belongs to the love reading cat" width="150px" height="auto">
+
+      <br>
       <a href="index.html" style="bottom:0; left:0;">[<--Go back to Home]</a>
 
     </div>
-
-
+    <br>
 
 </body>
 <script src="bookshelf.js"></script>

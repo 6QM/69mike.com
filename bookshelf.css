@@ -174,3 +174,13 @@
     transform: rotateX(-25deg) rotateY(-40deg) rotateZ(-15deg) translateY(50px)
       translateX(-30px);
   }
+
+  .background-bookshelf {
+    align: center;
+    background-image: url('images/crop.jpg');
+    background-repeat: no-repeat;
+    /* padding-bottom: 50px; johnmike's note:to make every book keep a certain distance with the year tittle */
+  }
+
+  /* class="background-bookshelf" style="background-size: 800px 280px;"
+class="bookshelf" style="position: relative; left: 30px; bottom:35px;" */
