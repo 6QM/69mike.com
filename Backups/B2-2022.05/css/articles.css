@@ -1,0 +1,44 @@
+body {
+  background-color: #F4F5DB;
+  font-family: sans-serif;
+  color: blue;
+  align-content: center;
+}
+
+table {
+  font-size: 1rem;
+}
+
+.article {
+  width: 70%;
+  display: inline-block;
+}
+
+.tittle {
+  width: 70%;
+  display: inline-block;
+}
+
+/* navigation-starts */
+nav {
+    border-bottom: 1px solid black;
+}
+
+.crumbs ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.crumb {
+    display: inline-block;
+}
+
+.crumb a::after {
+    display: inline-block;
+    color: #000;
+    content: '>';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+}
+/* navigation-ends */

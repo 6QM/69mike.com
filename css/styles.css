@@ -1,0 +1,64 @@
+  body {
+    background-color: #EEEEEE;
+    font-family: sans-serif;
+  }
+
+  hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: gray;
+    border-width: 5px;
+    width: 5%;
+  }
+
+  h1 {
+    color: #ee7752;
+    /* font-family: cursive; */
+    font-family: sans-serif;
+  }
+  h3 {
+    color: #ee7752;
+    font-family: sans-serif;
+  }
+
+
+  footer {
+      display: flex;
+      justify-content: center;
+      padding: 5px;
+      color: black;
+  }
+
+
+
+  .top-navigation {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: #3b3b3b; */
+  }
+
+  .top-navigation li {
+    float:left;
+  }
+
+  .top-navigation li a {
+    display: inline-block;
+    border-bottom: 1px solid black;
+    background-color: #DEF;
+    color:black;
+    text-decoration: none;
+    font-variant: small-caps;
+    /* font-variant 属性设置小型大写字母的字体显示文本，这意味着所有的小写字母均会被转换为大写，但是所有使用小型大写字体的字母与其余文本相比，其字体尺寸更小 */
+    padding: 0 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 3px;
+    font-size: 120%;
+  }
+
+    .top-navigation li a:hover {
+      color: white;
+      background-color: blue;
+    }
