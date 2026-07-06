@@ -63,12 +63,33 @@ Bookshelf content is maintained in `content/bookshelf.md`.
 
 ## Publishing Rules
 
-The publishing target is GitHub Pages through `.github/workflows/deploy.yml`.
+The current live publishing target is the VPS, not GitHub Pages.
 
-- The workflow builds Hugo from source.
-- `public/` should be produced by the workflow, not treated as long-term source.
-- Before relying on deployment, verify GitHub Pages is enabled in repository settings and set to GitHub Actions.
-- If using the custom domain, verify `69mike.com` in GitHub Pages settings and DNS.
+- SSH host: `mikee@67.209.179.214`
+- SSH key: `~/.ssh/agent/69mike_vps_deploy_ed25519`
+- Web root: `/var/www/blog`
+- Nginx config: `/etc/nginx/sites-enabled/69mike.com`
+
+For VPS deployment:
+
+Prefer running:
+
+```bash
+./scripts/deploy-vps.sh
+```
+
+The script builds Hugo, removes macOS metadata, packages with `COPYFILE_DISABLE=1 tar`, uploads with the deploy key, backs up `/var/www/blog`, replaces the web root, and verifies `https://69mike.com/`.
+
+If deploying manually:
+
+1. Run `hugo --minify --cleanDestinationDir`.
+2. Remove macOS metadata from `public/` before packaging.
+3. Package with `COPYFILE_DISABLE=1 tar` so `._*` AppleDouble files are not uploaded.
+4. Upload the archive using the deploy key.
+5. Back up `/var/www/blog` on the VPS before replacing it.
+6. Replace `/var/www/blog` with the new build and verify `https://69mike.com/`.
+
+GitHub Pages through `.github/workflows/deploy.yml` is available as an optional future path. Do not assume it is the live target unless DNS has moved away from the VPS.
 
 ## Completion Checklist
 
@@ -78,4 +99,3 @@ Before final response:
 - Mention any warnings that remain.
 - Report files changed and whether changes were committed.
 - Leave the working tree state clear or explicitly explain remaining uncommitted work.
-

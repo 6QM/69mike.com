@@ -84,25 +84,39 @@ Content rule of thumb:
 
 ## 4. Publish Workflow
 
-The intended future flow is:
+The current live publishing target is the VPS behind `69mike.com`.
+
+- SSH host: `mikee@67.209.179.214`
+- SSH key: `~/.ssh/agent/69mike_vps_deploy_ed25519`
+- Web root: `/var/www/blog`
+- Nginx config: `/etc/nginx/sites-enabled/69mike.com`
+- Latest deployment backup from this session: `/var/www/backups/blog-final-20260706-175334`
+
+The live VPS flow is:
 
 1. Edit content or site files on a working branch.
 2. Run a local preview/build.
 3. Commit changes.
 4. Push branch to GitHub.
-5. Open a pull request or review the diff.
-6. Merge into the publishing branch.
-7. GitHub Actions builds Hugo and deploys the generated `public` artifact to GitHub Pages.
+5. Deploy with `./scripts/deploy-vps.sh`.
+
+The deploy script builds the site, packages `public/`, uploads the artifact with the deploy key, backs up `/var/www/blog`, replaces the web root, and verifies `https://69mike.com/`.
+
+If deploying manually, build the site with `hugo --minify --cleanDestinationDir`, package `public/` with `COPYFILE_DISABLE=1 tar`, upload the archive to the VPS, back up `/var/www/blog`, replace the web root, and verify `https://69mike.com/` plus key pages such as `/bookshelf/`.
+
+Before packaging, remove `.DS_Store` and `._*` files from `public/`.
+
+GitHub Pages is also configured as an optional workflow-based path:
 
 Workflow file: `.github/workflows/deploy.yml`
 
 The workflow runs on pushes to `master` or `main`, and can also be started manually from the GitHub Actions tab.
 
-The GitHub Actions workflow should build the site from source. `public/` is a generated artifact and should not be manually edited or reviewed as source content.
+The GitHub Actions workflow builds the site from source. `public/` is a generated artifact and should not be manually edited or reviewed as source content.
 
 GitHub Pages is configured to use GitHub Actions as the build source. The custom domain is set to `69mike.com` and is also recorded in `static/CNAME`, so the generated artifact includes a root `CNAME` file.
 
-HTTPS enforcement may need to wait until GitHub finishes certificate provisioning and DNS verification. On 2026-07-07, `69mike.com` still resolved to `67.209.179.214`, not GitHub Pages. Before switching live traffic to GitHub Pages, update DNS records for the apex domain to GitHub Pages and then enable HTTPS enforcement after the certificate is ready.
+On 2026-07-07, `69mike.com` resolves to `67.209.179.214`, the VPS. Before switching live traffic to GitHub Pages, update DNS records for the apex domain to GitHub Pages and then enable HTTPS enforcement after the certificate is ready.
 
 ## 5. Rollback Workflow
 

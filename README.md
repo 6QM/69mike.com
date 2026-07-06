@@ -11,7 +11,7 @@ The site is built with Hugo and the PaperMod theme. The repository is intended t
 - `layouts/`: local shortcode and partial overrides.
 - `static/`: images, CSS, JavaScript, files, and favicons copied directly into the site.
 - `docs/website-workflow.md`: personal workflow notes, archive point, publishing plan, and maintenance backlog.
-- `.github/workflows/deploy.yml`: GitHub Pages deployment workflow.
+- `.github/workflows/deploy.yml`: optional GitHub Pages deployment workflow.
 - `AGENTS.md`: shared instructions for Codex, Claude Code, and other AI agents.
 
 ## Local Development
@@ -59,17 +59,34 @@ The 3D book styling lives in `static/css/bookshelf.css` and `static/js/bookshelf
 
 ## Publishing
 
-The intended publishing path is GitHub Pages through GitHub Actions:
+The current live deployment target is the VPS serving `69mike.com`:
+
+- SSH host: `mikee@67.209.179.214`
+- SSH key: `~/.ssh/agent/69mike_vps_deploy_ed25519`
+- Web root: `/var/www/blog`
+- Nginx config: `/etc/nginx/sites-enabled/69mike.com`
+
+Build locally, package `public/`, upload it with the deploy key, back up `/var/www/blog`, then replace the web root.
+
+For the normal VPS deploy path, run:
+
+```bash
+./scripts/deploy-vps.sh
+```
+
+GitHub Pages is configured as an optional workflow-based deployment path, but the domain DNS currently points to the VPS, not GitHub Pages.
+
+The normal publishing path is:
 
 1. Edit source files on a branch.
 2. Run a local Hugo build.
 3. Commit and push.
-4. Merge into `master` or `main`.
-5. GitHub Actions builds the site and uploads the generated `public/` artifact.
+4. Build `public/`.
+5. Deploy `public/` to the VPS web root.
 
-GitHub Pages is configured with source set to GitHub Actions. The custom domain is set to `69mike.com`, but DNS still needs to point to GitHub Pages before the domain can serve the GitHub-built site.
+GitHub Pages is configured with source set to GitHub Actions. The custom domain is set to `69mike.com`, but DNS currently remains on the VPS.
 
-The custom domain is also kept in `static/CNAME`, so Hugo copies it into the deployed artifact.
+The custom domain is also kept in `static/CNAME`, so Hugo copies it into the artifact if GitHub Pages is used later.
 
 ## Archive
 
