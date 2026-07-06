@@ -1,0 +1,30 @@
+<div class="bookshelf-container">
+  <!-- <h3>{{ .Get "year" }} 年的书架 📚</h3>  -->
+  <div class="bookshelf">
+    {{ $year := .Get "year" }}
+    {{ $defaultColor := "saddlebrown" }}
+    {{ $defaultCover := "/images/default-cover.png" }}
+    {{ if $year }}
+      {{ with $.Page.Params.books }}
+        {{ with index . $year }}
+          {{ range . }}
+            <div class="book">
+              <div class="side spine" style="background-color: {{ .color | default $defaultColor }};">
+                <span class="spine-title">《{{ .title }}》</span>
+                <span class="spine-author">{{ .author }}</span>
+              </div>
+              <div class="side top"></div>
+              <div class="side cover" style="background-image: url('{{ .cover | default $defaultCover }}');"></div>
+            </div>
+          {{ end }}
+        {{ else }}
+          <p>{{ i18n "bookshelf.no_books" (dict "year" $year) }}</p>
+        {{ end }}
+      {{ else }}
+        <p>{{ i18n "bookshelf.no_config" }}</p>
+      {{ end }}
+    {{ else }}
+      <p>{{ i18n "bookshelf.no_year" }}</p>
+    {{ end }}
+  </div>
+</div>

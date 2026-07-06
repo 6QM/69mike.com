@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://69mike.com/sitemap.xml

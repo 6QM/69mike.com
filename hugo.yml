@@ -1,0 +1,179 @@
+baseURL: "https://69mike.com/"
+title: John Mike
+# paginate: 5
+pagination:
+  pagerSize: 5     # 原来 paginate 的值
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: John Mike
+  description: "Inspired by book, people and life :')"
+  keywords: [Blog, Portfolio, Life]
+  author: John Mike
+  # author: ["Me", "You"] # multiple authors
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: light # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: true
+  utterances:
+    repo: "6QM/blog-comments"
+    label: "💬 Comments"
+    theme: "github-light"
+    crossorigin: "anonymous"
+
+  #JohnMike modified: add visible articles to home page with specified folder' contents
+  mainSections:
+    - posts
+    - docs
+# folder's name for visible purpose at homepage
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "</favicon.ico>"
+    favicon16x16: "</favicon-16x16.png>"
+    favicon32x32: "</favicon-32x32.png>"
+    apple_touch_icon: "</apple-touch-icon.png>"
+    safari_pinned_tab: "</apple-touch-icon.png>"
+
+  label:
+    text: "John Mike"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: false # needs to be explicitly set
+    title: John Mike
+    subtitle: "This is subtitle"
+    imageUrl: "<img location>"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: "Welcome to John Mike's blog :') *John Mike* is the name I prefer using on the internet. My Chinese name is Qiaomai Liu.
+     Here, I shared some writing stuff based on my past time. For more information, check the CV.
+"
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/i69mike"
+    - name: github
+      url: "https://github.com/6QM"
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: false # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+#  editPost:
+#    URL: "https://github.com/<path_to_repo>/content"
+#    Text: "Suggest Changes" # edit text
+#    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+ #   - identifier: categories
+  #    name: Categories
+    #  url: /categories/
+     # weight: 10
+    - identifier: about_me
+      name: About me
+      url: /about_me/
+      weight: 30
+    - identifier: bookshelf
+      name: Bookshelf
+      url: /bookshelf/
+      weight: 40
+    - identifier: diary
+      name: Diary
+      url: /diary/
+      weight: 50
+    - identifier: nav
+      name: Nav
+      url: https://tosear.ch
+      weight: 60
+    - identifier: archive
+      name: Archive
+      url: /archives/
+      weight: 70
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 75
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 80
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  goldmark:   # 这个设置会允许 Markdown 解析器渲染原始 HTML 标签。
+    renderer:
+      unsafe: true # allow HTML in md files, only for bookshelf
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
+# 忽略 goldmark 原生 HTML 警告
+ignoreLogs:
+  - "warning-goldmark-raw-html"
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary

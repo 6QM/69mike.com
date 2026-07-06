@@ -1,0 +1,37 @@
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.3rem; padding: 0.3rem;">
+  
+    <!-- 第一列：学校 Logo -->
+    <div style="width: 20%; text-align: center;">
+        <img src="{{ .Get "logo" }}" alt="School Logo" style="width: 100px; height: auto;">
+    </div>
+    
+    <!-- 第二列：学校信息 -->
+    <div style="width: 60%; font-size: 1rem; line-height: 1.6;">
+        <ul class="custom-bullet">
+            {{ .Inner }}
+        </ul>
+    </div>
+    
+    <!-- 第三列：学校照片 -->
+    <div style="width: 20%; text-align: center;">
+        <img src="{{ .Get "photo" }}" alt="Campus Photo" style="width: 100%; height: auto;">
+    </div>
+  
+</div>
+
+<style>
+  /* 定义 Bullet 的样式 */
+  .custom-bullet {
+      list-style-type: square; /* Bullet 类型 */
+      padding-left: 1.5rem; /* 调整缩进 */
+      margin: 0;
+  }
+  .custom-bullet li::marker {
+      font-size: 0.7rem; /* 调整 Bullet 图标的大小 */
+      color: #555; /* 设置 Bullet 图标颜色 */
+  }
+  .custom-bullet li {
+      font-size: 1rem; /* 文字大小 */
+      line-height: 1.5; /* 行间距 */
+  }
+</style>

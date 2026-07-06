@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on John Mike</title>
+    <link>https://69mike.com/tags/</link>
+    <description>Recent content in Tags on John Mike</description>
+    <image>
+      <title>John Mike</title>
+      <url>https://69mike.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://69mike.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 11 Sep 2024 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://69mike.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Life</title>
+      <link>https://69mike.com/tags/life/</link>
+      <pubDate>Wed, 11 Sep 2024 00:00:00 +0800</pubDate>
+      <guid>https://69mike.com/tags/life/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Poetry</title>
+      <link>https://69mike.com/tags/poetry/</link>
+      <pubDate>Wed, 11 Sep 2024 00:00:00 +0800</pubDate>
+      <guid>https://69mike.com/tags/poetry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reflection</title>
+      <link>https://69mike.com/tags/reflection/</link>
+      <pubDate>Wed, 11 Sep 2024 00:00:00 +0800</pubDate>
+      <guid>https://69mike.com/tags/reflection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Translation</title>
+      <link>https://69mike.com/tags/translation/</link>
+      <pubDate>Wed, 11 Sep 2024 00:00:00 +0800</pubDate>
+      <guid>https://69mike.com/tags/translation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Writing for Myself</title>
+      <link>https://69mike.com/tags/writing-for-myself/</link>
+      <pubDate>Wed, 11 Sep 2024 00:00:00 +0800</pubDate>
+      <guid>https://69mike.com/tags/writing-for-myself/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Self Development</title>
+      <link>https://69mike.com/tags/self-development/</link>
+      <pubDate>Sun, 20 Feb 2022 00:00:32 +0800</pubDate>
+      <guid>https://69mike.com/tags/self-development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Book</title>
+      <link>https://69mike.com/tags/book/</link>
+      <pubDate>Thu, 06 May 2021 23:53:08 +0800</pubDate>
+      <guid>https://69mike.com/tags/book/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Opinion</title>
+      <link>https://69mike.com/tags/opinion/</link>
+      <pubDate>Sun, 29 Oct 2017 17:12:23 +0800</pubDate>
+      <guid>https://69mike.com/tags/opinion/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
