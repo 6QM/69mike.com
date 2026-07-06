@@ -5,7 +5,7 @@ draft: false
 comments: true
 ShowBreadCrumbs: false
 books:
-  20181:
+  2018:
     - title: "苏东坡传"
       author: "(CN) 林语堂"
       cover: "/images/bookcover-for-bookshelf/sudong.jpg"
@@ -54,7 +54,6 @@ books:
       author: "(US) 维多克·弗兰克尔"
       cover: "/images/bookcover-for-bookshelf/huochu.jpg"
       color: "darkred"
-  20182:
     - title: "小狗钱钱1"
       author: "(DE) 舍费尔"
       cover: "/images/bookcover-for-bookshelf/xiaogou1.jpg"
@@ -75,7 +74,7 @@ books:
       author: "(IT) 卡洛·罗韦利"
       cover: "/images/bookcover-for-bookshelf/qitang.jpg"
       color: "olive"
-  20191:
+  2019:
     - title: "英语阅读，看这本就够了"
       author: "(KR) 李善玉"
       cover: "/images/bookcover-for-bookshelf/xiaogou1.jpg"
@@ -124,7 +123,6 @@ books:
       author: "(FR) 让-雅克·卢梭"
       cover: "/images/bookcover-for-bookshelf/qingren.jpg"
       color: "tan"
-  20192:
     - title: "终身学习"
       author: "(US) 丹·苏利文"
       cover: "/images/bookcover-for-bookshelf/acheng.jpg"
@@ -235,7 +233,7 @@ books:
 <link rel="stylesheet" href="/css/bookshelf.css">
 <script src="/js/bookshelf.js" defer></script>
 
-<!-- 每个年份书架创建最多10本书，然后进行分组(年份后面添加序号从1开始，例如year1,year2,引用时也需要修改) -->
+<!-- 书架会根据屏幕宽度自动分行；每个年份只需要维护一个书籍列表。 -->
 
 ### Why I read books
 
@@ -243,16 +241,12 @@ There is more to me by reading books than meets the eye, it gives me a little li
 
 ### 2018
 
-{{< bookshelf year="20181" >}}
-
-{{< bookshelf year="20182" >}}
+{{< bookshelf year="2018" >}}
 
 
 ### 2019
 
-{{< bookshelf year="20191" >}}
-
-{{< bookshelf year="20192" >}}
+{{< bookshelf year="2019" >}}
 
 
 ### 2020

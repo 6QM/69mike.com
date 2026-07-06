@@ -41,5 +41,80 @@ spines.map(function (s, i) {
   tops[i].style.top = `${280 - randomHeight}px`;
 });
 
+function layoutBookshelfRows() {
+  document.querySelectorAll(".bookshelf").forEach(function (shelf) {
+    const books = Array.from(shelf.querySelectorAll(".book"));
+
+    books.forEach(function (book) {
+      shelf.appendChild(book);
+    });
+
+    shelf.querySelectorAll(".bookshelf-row").forEach(function (row) {
+      row.remove();
+    });
+
+    if (!books.length) return;
+
+    const shelfStyle = window.getComputedStyle(shelf);
+    const rowPadX = parseFloat(shelfStyle.getPropertyValue("--shelf-row-pad-x")) || 30;
+    const firstBookStyle = window.getComputedStyle(books[0]);
+    const bookWidth =
+      books[0].offsetWidth +
+      parseFloat(firstBookStyle.marginLeft || 0) +
+      parseFloat(firstBookStyle.marginRight || 0);
+    const usableWidth = Math.max(books[0].offsetWidth, shelf.clientWidth - rowPadX * 2);
+    const booksPerRow = Math.max(1, Math.floor(usableWidth / bookWidth));
+
+    shelf.classList.add("bookshelf-rowed");
+
+    for (let index = 0; index < books.length; index += booksPerRow) {
+      const row = document.createElement("div");
+      row.className = "bookshelf-row";
+      row.setAttribute("aria-label", "Bookshelf row");
+
+      books.slice(index, index + booksPerRow).forEach(function (book) {
+        row.appendChild(book);
+      });
+
+      shelf.appendChild(row);
+    }
+  });
+}
+
+let bookshelfResizeTimer;
+
+function scheduleBookshelfLayout() {
+  window.clearTimeout(bookshelfResizeTimer);
+  bookshelfResizeTimer = window.setTimeout(layoutBookshelfRows, 120);
+}
+
+layoutBookshelfRows();
+
+if ("ResizeObserver" in window) {
+  const observedShelfWidths = new WeakMap();
+  const bookshelfResizeObserver = new ResizeObserver(function (entries) {
+    let shouldLayout = false;
+
+    entries.forEach(function (entry) {
+      const width = Math.round(entry.contentRect.width);
+
+      if (observedShelfWidths.get(entry.target) !== width) {
+        observedShelfWidths.set(entry.target, width);
+        shouldLayout = true;
+      }
+    });
+
+    if (shouldLayout) {
+      scheduleBookshelfLayout();
+    }
+  });
+
+  document.querySelectorAll(".bookshelf").forEach(function (shelf) {
+    observedShelfWidths.set(shelf, Math.round(shelf.getBoundingClientRect().width));
+    bookshelfResizeObserver.observe(shelf);
+  });
+} else {
+  window.addEventListener("resize", scheduleBookshelfLayout);
+}
 
 // 生成书架

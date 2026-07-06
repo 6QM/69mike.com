@@ -181,7 +181,7 @@
       <description>&lt;!-- 加载书架相关的 CSS 和 JS --&gt;
 &lt;link rel=&#34;stylesheet&#34; href=&#34;https://69mike.com/css/bookshelf.css&#34;&gt;
 &lt;script src=&#34;https://69mike.com/js/bookshelf.js&#34; defer&gt;&lt;/script&gt;
-&lt;!-- 每个年份书架创建最多10本书，然后进行分组(年份后面添加序号从1开始，例如year1,year2,引用时也需要修改) --&gt;
+&lt;!-- 书架会根据屏幕宽度自动分行；每个年份只需要维护一个书籍列表。 --&gt;
 &lt;h3 id=&#34;why-i-read-books&#34;&gt;Why I read books&lt;/h3&gt;
 &lt;p&gt;There is more to me by reading books than meets the eye, it gives me a little likelihood of having ability to look deep into the nature by knowing more especially when I actually do not have any advantages before taking the actions. -2021.06.13&lt;/p&gt;
 &lt;h3 id=&#34;2018&#34;&gt;2018&lt;/h3&gt;
@@ -302,22 +302,6 @@
               &lt;div class=&#34;side top&#34;&gt;&lt;/div&gt;
               &lt;div class=&#34;side cover&#34; style=&#34;background-image: url(&#39;/images/bookcover-for-bookshelf/huochu.jpg&#39;);&#34;&gt;&lt;/div&gt;
             &lt;/div&gt;
-          
-        
-      
-    
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;bookshelf-container&#34;&gt;
-  
-  &lt;div class=&#34;bookshelf&#34;&gt;
-    
-    
-    
-    
-      
-        
           
             &lt;div class=&#34;book&#34;&gt;
               &lt;div class=&#34;side spine&#34; style=&#34;background-color: yellow;&#34;&gt;
@@ -488,22 +472,6 @@
               &lt;div class=&#34;side top&#34;&gt;&lt;/div&gt;
               &lt;div class=&#34;side cover&#34; style=&#34;background-image: url(&#39;/images/bookcover-for-bookshelf/qingren.jpg&#39;);&#34;&gt;&lt;/div&gt;
             &lt;/div&gt;
-          
-        
-      
-    
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;bookshelf-container&#34;&gt;
-  
-  &lt;div class=&#34;bookshelf&#34;&gt;
-    
-    
-    
-    
-      
-        
           
             &lt;div class=&#34;book&#34;&gt;
               &lt;div class=&#34;side spine&#34; style=&#34;background-color: coral;&#34;&gt;
