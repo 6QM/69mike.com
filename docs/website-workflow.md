@@ -98,9 +98,11 @@ Workflow file: `.github/workflows/deploy.yml`
 
 The workflow runs on pushes to `master` or `main`, and can also be started manually from the GitHub Actions tab.
 
-The GitHub Actions workflow should build the site from source. Long term, `public/` should not need to be manually edited or reviewed as source content.
+The GitHub Actions workflow should build the site from source. `public/` is a generated artifact and should not be manually edited or reviewed as source content.
 
-To publish through GitHub Pages, the repository also needs GitHub Pages enabled in repository settings. If using the custom domain `69mike.com`, configure the GitHub Pages custom domain and DNS records there.
+GitHub Pages is configured to use GitHub Actions as the build source. The custom domain is set to `69mike.com` and is also recorded in `static/CNAME`, so the generated artifact includes a root `CNAME` file.
+
+HTTPS enforcement may need to wait until GitHub finishes certificate provisioning and DNS verification. On 2026-07-07, `69mike.com` still resolved to `67.209.179.214`, not GitHub Pages. Before switching live traffic to GitHub Pages, update DNS records for the apex domain to GitHub Pages and then enable HTTPS enforcement after the certificate is ready.
 
 ## 5. Rollback Workflow
 
@@ -126,23 +128,31 @@ These were the main issues found during the first audit:
 2. No GitHub Actions workflow existed for build or deploy.
 3. GitHub Pages was not configured in the repository.
 4. Local machine did not have `hugo` available, so local build verification was not ready.
-5. Source and generated `public/` output were both tracked, making the repository larger and diffs noisier.
-6. `hugo.yml` contained invalid placeholder values for Google Analytics, Open Graph images, favicons, and site verification tags.
-7. Many content files had placeholder `canonicalURL` values that generated bad canonical links.
-8. Many content files had placeholder cover image values copied from the template, creating broken image URLs.
-9. Some cover image URLs were wrapped in angle brackets, which generated invalid output.
-10. The comments partial hardcoded a different utterances theme than the main config.
+5. Source and generated `public/` output were both tracked, making the repository larger and diffs noisier. Resolved by ignoring `public/` and relying on GitHub Actions to build the artifact.
+6. `hugo.yml` contained invalid placeholder values for Google Analytics, Open Graph images, favicons, and site verification tags. The active placeholders were removed; keep config values real.
+7. Many content files had placeholder `canonicalURL` values that generated bad canonical links. Resolved in the cleanup branch.
+8. Many content files had placeholder cover image values copied from the template, creating broken image URLs. Resolved in the cleanup branch.
+9. Some cover image URLs were wrapped in angle brackets, which generated invalid output. Resolved in the cleanup branch.
+10. The comments partial hardcoded a different utterances theme than the main config. Resolved by reading values from `hugo.yml`.
 
-## 7. Privacy Note
+## 7. Project Documents
+
+- `README.md`: quick project overview for personal use and future collaborators.
+- `AGENTS.md`: shared instructions for Codex, Claude Code, and other AI agents.
+- `docs/website-workflow.md`: longer workflow and archive notes.
+
+Do not create separate `CLAUDE.md` or `CODEX.md` files. Keep agent-facing instructions in `AGENTS.md`.
+
+## 8. Privacy Note
 
 The GitHub repository is public. Files under `static/files/` and other personal documents in the repository should be reviewed before relying on GitHub as the long-term publishing source.
 
-## 8. Agent Prompt Template
+## 9. Agent Prompt Template
 
 Use a prompt like this for future Codex or Claude Code sessions:
 
 ```text
 This is my Hugo personal blog source for 69mike.com.
-Please first read docs/website-workflow.md, check git status, and summarize what you plan to change.
+Please first read README.md, AGENTS.md, and docs/website-workflow.md, check git status, and summarize what you plan to change.
 Do not edit unrelated files. Preserve my content voice. Run a Hugo build before finishing if possible.
 ```
