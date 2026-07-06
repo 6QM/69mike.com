@@ -8,7 +8,6 @@ draft: false
 hidemeta: false
 comments: true
 description: ""
-canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: false
 
@@ -17,15 +16,9 @@ searchHidden: false
 ShowReadingTime: false
 ShowBreadCrumbs: false
 ShowPostNavLinks: false
-ShowWordCount: true
+ShowWordCount: false
 ShowRssButtonInSectionTermList: false
 UseHugoToc: true
-cover:
-    image: "<image path/url>" # image path/url
-    alt: "<alt text>" # alt text
-    caption: "<text>" # display caption under cover
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
 ---
 
 ## CONTENT
@@ -60,7 +53,7 @@ I love reading (see notes from [John Mike's Library Gallery Notes](https://johnm
   + [不断初心](https://github.com/6QM/iDiary/blob/main/2017.md#%E4%B8%8D%E5%BF%98%E5%88%9D%E5%BF%83)
   + [美丽的遗憾](https://github.com/6QM/iDiary/blob/main/2017.md#%E7%BE%8E%E4%B8%BD%E7%9A%84%E9%81%97%E6%86%BE)
 + August
-  + [成长](https://github.com/6QM/iDiary/blob/main/2017.md#%E6%88%90%E9%95%BF) 
+  + [成长](https://github.com/6QM/iDiary/blob/main/2017.md#%E6%88%90%E9%95%BF)
 + September
   + [我的指南针](https://github.com/6QM/iDiary/blob/main/2017.md#%E6%88%91%E7%9A%84%E6%8C%87%E5%8D%97%E9%92%88)
   + [钱途](https://github.com/6QM/iDiary/blob/main/2017.md#%E9%92%B1%E9%80%94)
@@ -71,9 +64,9 @@ I love reading (see notes from [John Mike's Library Gallery Notes](https://johnm
   + [进书店](https://github.com/6QM/iDiary/blob/main/2017.md#%E8%BF%9B%E4%B9%A6%E5%BA%97)
   + [读书是一件要事](https://github.com/6QM/iDiary/blob/main/2017.md#%E8%AF%BB%E4%B9%A6%E6%98%AF%E4%B8%80%E4%BB%B6%E8%A6%81%E4%BA%8B)
 + November
-  + [马哲老师与学生](https://github.com/6QM/iDiary/blob/main/2017.md#%E9%A9%AC%E5%93%B2%E8%80%81%E5%B8%88%E4%BD%99%E5%AD%A6%E7%94%9F) 
+  + [马哲老师与学生](https://github.com/6QM/iDiary/blob/main/2017.md#%E9%A9%AC%E5%93%B2%E8%80%81%E5%B8%88%E4%BD%99%E5%AD%A6%E7%94%9F)
   + [大学可是大好的痛苦时光](https://github.com/6QM/iDiary/blob/main/2017.md#%E5%A4%A7%E5%AD%A6%E5%8F%AF%E6%98%AF%E5%A4%A7%E5%A5%BD%E7%9A%84%E7%97%9B%E8%8B%A6%E6%97%B6%E5%85%89)
-  + [关于吃苦的经验](https://github.com/6QM/iDiary/blob/main/2017.md#%E5%85%B3%E4%BA%8E%E5%90%83%E8%8B%A6%E7%9A%84%E7%BB%8F%E9%AA%8C) 
+  + [关于吃苦的经验](https://github.com/6QM/iDiary/blob/main/2017.md#%E5%85%B3%E4%BA%8E%E5%90%83%E8%8B%A6%E7%9A%84%E7%BB%8F%E9%AA%8C)
   + [“阶级固化“了你的思维](https://github.com/6QM/iDiary/blob/main/2017.md#%E9%98%B6%E7%BA%A7%E5%9B%BA%E5%8C%96%E4%BA%86%E4%BD%A0%E7%9A%84%E6%80%9D%E7%BB%B4)
   + [不成熟的记录](https://github.com/6QM/iDiary/blob/main/2017.md#%E4%B8%8D%E6%88%90%E7%86%9F%E7%9A%84%E8%AE%B0%E5%BD%95)
   + [注重精神的他](https://github.com/6QM/iDiary/blob/main/2017.md#%E6%B3%A8%E9%87%8D%E7%B2%BE%E7%A5%9E%E7%9A%84%E4%BB%96)
@@ -112,7 +105,7 @@ I love reading (see notes from [John Mike's Library Gallery Notes](https://johnm
   + [荐读—《人生》](https://github.com/6QM/iDiary/blob/main/2018.md#%E8%8D%90%E8%AF%BB%E4%BA%BA%E7%94%9F)
   + [人生要耐得住寂寞](https://github.com/6QM/iDiary/blob/main/2018.md#%E4%BA%BA%E7%94%9F%E8%A6%81%E8%80%90%E5%BE%97%E4%BD%8F%E5%AF%82%E5%AF%9E)
   + [少年，你不要急](https://github.com/6QM/iDiary/blob/main/2018.md#%E5%B0%91%E5%B9%B4%E4%BD%A0%E4%B8%8D%E8%A6%81%E6%80%A5)
-  
+
 + March
   + [又是离别](https://github.com/6QM/iDiary/blob/main/2018.md#%E5%8F%88%E6%98%AF%E7%A6%BB%E5%88%AB)
   + [荐读—《小王子》](https://github.com/6QM/iDiary/blob/main/2018.md#%E8%8D%90%E8%AF%BB%E5%B0%8F%E7%8E%8B%E5%AD%90)

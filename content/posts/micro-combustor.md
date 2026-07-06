@@ -14,7 +14,6 @@ draft: true
 hidemeta: false
 comments: false
 # description: "Desc Text."
-canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: false
 hideSummary: false
@@ -22,19 +21,15 @@ searchHidden: false
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
-ShowWordCount: true
+ShowWordCount: false
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 cover:
-    image: "../images/a-diagram-of-MTPV-system-by-JohnMike.gif" # image path/url
-    alt: "<alt text>" # alt text
-    caption: "A micro combustor is utilized in the MTPV system." # display caption under cover
+    image: "/images/a-diagram-of-MTPV-system-by-JohnMike.gif"
+    alt: "Diagram of a micro thermophotovoltaic combustor system"
+    caption: "A micro combustor is utilized in the MTPV system."
     relative: false # when using page bundles set this to true
     hidden: false # only hide on current single page
-# editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
 ---
 
 # A Story from one manuscript: Non-premixed Pure hydrogen/air combustion within the micro combustor

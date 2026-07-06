@@ -12,7 +12,6 @@ draft: false
 hidemeta: false
 comments: false
 # description: "Desc Text."
-canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: false
 hideSummary: false
@@ -20,19 +19,9 @@ searchHidden: false
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
-ShowWordCount: true
+ShowWordCount: false
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
-cover:
-    image: "<image path/url>" # image path/url
-    alt: "<alt text>" # alt text
-    caption: "<text>" # display caption under cover
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
-# editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
 ---
 
 As far as I’m concerned, there is one thing I should try my best to make which makes the gravity my of heart inside against deadly personal habits which rule me and even could sabotage all efforts I ever made. Unless the doer extremely makes up his mind, the situation would never get better than ever. And I won’t make any true progress before that.

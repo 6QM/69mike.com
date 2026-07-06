@@ -1,9 +1,13 @@
-{{ if .Params.comments }}
+{{- $utterances := .Site.Params.utterances -}}
+{{- if and .Params.comments $utterances.repo }}
 <script src="https://utteranc.es/client.js"
-        repo="6QM/blog-comments"
-        issue-term="pathname"
-        theme="github-dark"
-        crossorigin="anonymous"
+        repo="{{ $utterances.repo }}"
+        issue-term="{{ $utterances.issueTerm | default "pathname" }}"
+        {{ with $utterances.label }}
+        label="{{ . }}"
+        {{ end }}
+        theme="{{ $utterances.theme | default "github-light" }}"
+        crossorigin="{{ $utterances.crossorigin | default "anonymous" }}"
         async>
 </script>
-{{ end }}
+{{- end }}

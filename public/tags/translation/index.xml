@@ -6,10 +6,10 @@
     <description>Recent content in Translation on John Mike</description>
     <image>
       <title>John Mike</title>
-      <url>https://69mike.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://69mike.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://69mike.com/images/default-cover.png</url>
+      <link>https://69mike.com/images/default-cover.png</link>
     </image>
-    <generator>Hugo -- 0.152.2</generator>
+    <generator>Hugo -- 0.163.3</generator>
     <language>en</language>
     <lastBuildDate>Wed, 11 Sep 2024 00:00:00 +0800</lastBuildDate>
     <atom:link href="https://69mike.com/tags/translation/index.xml" rel="self" type="application/rss+xml" />
