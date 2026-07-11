@@ -230,10 +230,14 @@ books:
       color: "darkslateblue"
 ---
 <!-- 加载书架相关的 CSS 和 JS -->
-<link rel="stylesheet" href="/css/bookshelf.css">
+<link rel="stylesheet" href="/css/bookshelf.css?v=20260712-authored-book">
 <script src="/js/bookshelf.js" defer></script>
 
 <!-- 书架会根据屏幕宽度自动分行；每个年份只需要维护一个书籍列表。 -->
+
+### The Book I've Written
+
+{{< authored-book id="the-worker-investor" >}}
 
 ### Why I read books
 

@@ -1,0 +1,27 @@
+{{- partial "writing_series_links.html" (dict "variant" "projects") -}}
+
+<div class="project-index">
+  {{- range sort hugo.Data.projects "priority" }}
+  {{- $project := . }}
+  <section class="project-section" id="{{ .id }}">
+    <header class="project-heading">
+      <h2>{{ .name }}</h2>
+      <p class="status-pill">{{ .status }}</p>
+    </header>
+    <div class="project-copy">
+      <p class="project-origin"><strong>Idea origin.</strong> {{ .origin }}</p>
+      <p>{{ .description }}</p>
+    </div>
+    {{- if or .external_url .series_url }}
+    <div class="project-actions">
+      {{- with .external_url }}
+      <a class="project-button" href="{{ . }}" target="_blank" rel="noopener">{{ $project.website_label }}</a>
+      {{- end }}
+      {{- with .series_url }}
+      <a class="project-button primary" href="{{ . | relURL }}">{{ $project.series_label }}</a>
+      {{- end }}
+    </div>
+    {{- end }}
+  </section>
+  {{- end }}
+</div>

@@ -1,0 +1,15 @@
+<section class="project-system" aria-labelledby="project-system-title">
+  <header class="project-system-header">
+    <p>Four long-term projects</p>
+    <h2 id="project-system-title">One direction: How to grow?</h2>
+  </header>
+  <div class="project-system-list">
+    {{- range sort hugo.Data.projects "priority" }}
+    <a class="project-system-item" href="#{{ .id }}">
+      <span class="project-system-name">{{ .name }}</span>
+      <strong>{{ .question }}</strong>
+      <span class="project-system-positioning">{{ .positioning }}</span>
+    </a>
+    {{- end }}
+  </div>
+</section>

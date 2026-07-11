@@ -3,7 +3,7 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 tags: ["Writing for myself"]
 categories: ["Life"]
-author: "John Mike"
+author: "Qiaomai"
 showToc: true
 TocOpen: false
 draft: false

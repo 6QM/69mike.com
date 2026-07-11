@@ -1,0 +1,34 @@
+{{- $variant := .variant | default "home" -}}
+{{- if eq $variant "projects" }}
+<section class="writing-series writing-series-projects" aria-labelledby="writing-series-title">
+  <header class="writing-series-header">
+    <p>Writing Series</p>
+    <h2 id="writing-series-title">Ongoing work lives here</h2>
+    <span>Project websites preserve the central idea. These series contain the continuing cases, arguments, and revisions.</span>
+  </header>
+  <div class="writing-series-list">
+    {{- range sort hugo.Data.projects "priority" }}
+      {{- $project := . }}
+      {{- with .series_url }}
+      <a class="writing-series-item" href="{{ . | relURL }}">
+        <strong>{{ $project.name }}</strong>
+        <span>{{ $project.series_summary }}</span>
+        <em>Read series</em>
+      </a>
+      {{- end }}
+    {{- end }}
+  </div>
+</section>
+{{- else }}
+<nav class="writing-series writing-series-home" aria-label="Writing series">
+  <span>Writing Series</span>
+  <div>
+    {{- range sort hugo.Data.projects "priority" }}
+      {{- $project := . }}
+      {{- with .series_url }}
+      <a href="{{ . | relURL }}">{{ $project.name }}</a>
+      {{- end }}
+    {{- end }}
+  </div>
+</nav>
+{{- end }}

@@ -1,0 +1,10 @@
+{{- with .GetTerms "series" }}
+<aside class="series-context" aria-label="Article series">
+  <span>Part of the series</span>
+  <div>
+    {{- range . }}
+    <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+    {{- end }}
+  </div>
+</aside>
+{{- end }}

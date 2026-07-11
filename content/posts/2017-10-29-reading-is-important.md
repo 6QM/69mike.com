@@ -4,8 +4,8 @@ date: 2017-10-29T17:12:23+08:00
 # weight: 1
 # aliases: ["/first"]
 tags: ["Writing for myself", "Opinion"]
-author: "John Mike"
-# author: ["John Mike", "You"] # multiple authors
+author: "Qiaomai"
+# author: ["Qiaomai", "You"] # multiple authors
 showToc: true
 TocOpen: false
 draft: false

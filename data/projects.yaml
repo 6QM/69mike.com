@@ -1,0 +1,47 @@
+- id: the-worker-investor
+  priority: 1
+  name: The Worker Investor
+  status: Writing in progress
+  question: How can an ordinary worker change their future?
+  positioning: How workers build financial optionality.
+  external_url: https://theworkerinvestor.com
+  series_url: /series/the-worker-investor/
+  book_cover: /images/bookcover-for-bookshelf/the-worker-investor-light.png
+  book_subtitle: From Labor to Ownership. Building Future Optionality.
+  series_summary: 关于工作、工资、资产与未来选择权的持续写作。
+  origin: 源于我对工资、劳动时间和投资亏损的重新思考。工作提供现金流和现实训练，但一个人的未来不应该永久依赖单一工资与唯一职业路径。
+  description: The Worker Investor 是一本正在写作的书，也是一个长期研究项目。它讨论一个仍然处于工作系统中的普通人，如何把工资、技能、经验、知识和作品逐渐转化为资产，并由此增加未来选择权。它不鼓励立即逃离工作，而是研究如何让今天的劳动成果在未来继续为自己工作。
+  website_label: 访问独立网站
+  series_label: 阅读系列文章
+
+- id: human-capital-etf
+  priority: 2
+  name: Human Capital ETF
+  status: Framework in development
+  question: What capabilities and assets should a person invest in?
+  positioning: A framework for allocating and compounding human capital.
+  external_url: https://humancapitaletf.com
+  series_url: /series/human-capital-etf/
+  series_summary: 关于时间、精力、技能与长期能力配置的持续论证。
+  origin: 源于投资亏损后的反思：除了金融资产，一个人是否也应该像管理投资组合一样，认真配置自己的健康、能力、时间和长期适应力？
+  description: Human Capital ETF 是一个关于人力资本配置的方法与工具项目。它使用投资组合、风险管理和再平衡的思维理解个人成长，帮助一个人配置时间、精力、核心能力、成长技能和表达资产。它不是金融 ETF、证券产品或投资基金。
+  website_label: 访问独立网站
+  series_label: 阅读系列文章
+
+- id: compounding-yourself
+  priority: 4
+  name: Compounding Yourself
+  status: Concept in development
+  question: Why and how do these capabilities actually grow?
+  positioning: How people grow through long-term learning, practice, and feedback.
+  origin: "Born from a simple question: Why doesn't understanding a concept immediately produce results?"
+  description: This project explores how learning, work, writing, reflection, and deliberate practice gradually compound into lasting personal growth. It is about enduring periods without immediate rewards, building judgment through feedback, and understanding how different abilities reinforce one another over time.
+
+- id: before-the-genius
+  priority: 3
+  name: Before the Genius
+  status: Research notes
+  question: How are exceptional people formed before exceptional work becomes visible?
+  positioning: How exceptional people are formed before exceptional work becomes visible.
+  origin: Inspired by the long, quiet years before remarkable work appears.
+  description: Rather than studying genius itself, this project examines the preparation behind exceptional people—their training, failures, experiments, reading, and daily practice—to understand how judgment, taste, and original work are developed long before the world notices.

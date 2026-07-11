@@ -1,0 +1,2 @@
+{{- $tocScript := resources.Get "js/toc-scrollspy.js" | minify | fingerprint -}}
+<script defer src="{{ $tocScript.RelPermalink }}" integrity="{{ $tocScript.Data.Integrity }}"></script>

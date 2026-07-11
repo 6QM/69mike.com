@@ -1,0 +1,56 @@
+{{- define "main" }}
+
+{{- $pages := .RegularPages.ByDate.Reverse -}}
+{{- $projectID := .Data.Term | urlize -}}
+{{- $projectMatches := where hugo.Data.projects "id" $projectID -}}
+
+<header class="series-header">
+  {{- partial "breadcrumbs.html" . }}
+  <p class="series-kicker">{{ .Param "seriesLabel" | default "Essay series" }}</p>
+  <h1>{{ .Title }}</h1>
+  {{- with .Content }}
+  <div class="series-intro post-content">{{ . }}</div>
+  {{- end }}
+  <div class="series-summary">
+    <span>{{ len $pages }} {{ cond (eq (len $pages) 1) "essay" "essays" }}</span>
+    {{- with index $pages 0 }}
+    <span>Latest update {{ .Date.Format "January 2, 2006" }}</span>
+    {{- end }}
+  </div>
+  <div class="series-actions">
+    {{- with index $projectMatches 0 }}
+      {{- with .external_url }}
+      <a href="{{ . }}" target="_blank" rel="noopener">Project website</a>
+      {{- end }}
+    {{- end }}
+    <a href="{{ "/projects/" | relURL }}#{{ $projectID }}">Project background</a>
+  </div>
+</header>
+
+<section class="series-reading-path" aria-labelledby="series-essays-title">
+  <header class="series-list-heading">
+    <h2 id="series-essays-title">Essays in this series</h2>
+    <p>Newest first. Every essay also remains part of the main 69mike archive.</p>
+  </header>
+
+  <ol class="series-list">
+    {{- range $index, $page := $pages }}
+    <li class="series-entry">
+      <span class="series-entry-number" aria-hidden="true">{{ printf "%02d" (add $index 1) }}</span>
+      <article>
+        <p class="series-entry-date">{{ .Date.Format "January 2, 2006" }}</p>
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        {{- with .Description }}
+        <p>{{ . }}</p>
+        {{- else with .Summary }}
+        <p>{{ . | plainify | htmlUnescape | truncate 190 }}</p>
+        {{- end }}
+      </article>
+    </li>
+    {{- else }}
+    <li class="series-empty">The first essay in this series is still being prepared.</li>
+    {{- end }}
+  </ol>
+</section>
+
+{{- end }}

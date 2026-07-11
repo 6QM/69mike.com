@@ -1,6 +1,6 @@
 ---
 title: "Diary"
-author: "John Mike"
+author: "Qiaomai"
 
 showToc: false
 TocOpen: false

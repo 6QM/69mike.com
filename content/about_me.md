@@ -1,6 +1,6 @@
 ---
-title: "CV: a brief intro"
-author: "John Mike"
+title: "About"
+author: "Qiaomai Liu"
 showToc: false
 TocOpen: false
 draft: false
@@ -19,8 +19,11 @@ ShowWordCount: false
 ShowRssButtonInSectionTermList: false
 UseHugoToc: true
 ---
+Hello, I’m Qiaomai Liu. I am an engineer whose work and training have centered on energy, combustion, and vehicle thermal management. I tend to learn by moving between practical problems, technical research, and written reflection.
 
-### Personal Information
+This page brings together the background behind my work: professional experience, education, academic projects, and selected publications.
+
+## Personal Information
 
 {{< personal-info 
     photo = "/images/experience/hello.png" 
@@ -33,20 +36,30 @@ UseHugoToc: true
 
 Originally from the Midwest of China—Chongqing, I hold a B.S. from XJU and have since earned my Master’s degree (2021–2024) from XJTU. During that time, my research, under the co-supervision of Professors Simin Wang and Juan Xiao, mainly focused on the combustion characteristics of hydrogen-blended fuels, with a keen eye on the global challenges of climate change and pollutant emissions.
 
-### Education
+## Education
 
-{{< three-column logo="/images/experience/logo_xjtu.png" photo="/images/experience/xjtu-campus.jpg" >}}
-<li>Sep. 2021 – Jun. 2024</li>
-<li>Xi'an Jiaotong University, Xi’an, Shaanxi</li>
-<li>M.S. in Power Engineering and Engineering Thermophysics</li>
-{{< /three-column >}}
+{{< resume-entry
+    logo="/images/experience/logo_xjtu.png"
+    organization="Xi'an Jiaotong University"
+    title="M.S. in Power Engineering and Engineering Thermophysics"
+    period="Sep. 2021 – Jun. 2024"
+    location="Xi'an, Shaanxi"
+    photo="/images/experience/xjtu-campus.jpg"
+    photo_alt="Xi'an Jiaotong University campus"
+>}}
+{{< /resume-entry >}}
 
 
-{{< three-column logo="/images/experience/logo_xju.png" photo="/images/experience/xju-campus.jpg" >}}
-<li>Sep. 2017 – Jun. 2021</li>
-<li>Xinjiang University, Urumqi, Xinjiang</li>
-<li>B.S. in Process Equipment and Control Engineering</li>
-{{< /three-column >}}
+{{< resume-entry
+    logo="/images/experience/logo_xju.png"
+    organization="Xinjiang University"
+    title="B.S. in Process Equipment and Control Engineering"
+    period="Sep. 2017 – Jun. 2021"
+    location="Urumqi, Xinjiang"
+    photo="/images/experience/xju-campus.jpg"
+    photo_alt="Xinjiang University campus"
+>}}
+{{< /resume-entry >}}
 
 
 
@@ -54,13 +67,30 @@ Originally from the Midwest of China—Chongqing, I hold a B.S. from XJU and hav
 
 <!-- ## Research Experience -->
 
-### Project Experience
+## Professional Experience
+
+{{< resume-entry
+    logo="/images/experience/logo-byd.png"
+    organization="BYD"
+    title="Commercial Vehicle Thermal Management R&D (European Market)"
+    period="Jan. 8, 2025 – Present"
+    location="Longgang, Shenzhen"
+>}}
+
+- Contribute to the R&D and engineering design of thermal-management systems for commercial buses, covering windshield defrosting, cabin air conditioning and heating, and battery thermal management.
+- Translate product requirements into engineering concepts and 3D designs, and prepare related technical documentation and internal workflow deliverables.
+- Collaborate with manufacturing and vehicle-integration teams to resolve design, fitment, and manufacturability issues during production.
+- Support the development, validation, and continuous improvement of selected products and subsystems.
+
+{{< /resume-entry >}}
+
+## Project Experience
 
 ![Academic Experience part 1](/images/experience/project_experience_part1.jpg)
 
 ![Academic Experience part 2](/images/experience/project_experience_part2.jpg)
 
-### Selective Research Experience
+## Selective Research Experience
 
 ![Selective Research Experience](/images/experience/selective_experience_1.jpg)
 
@@ -70,7 +100,7 @@ Originally from the Midwest of China—Chongqing, I hold a B.S. from XJU and hav
 
 
 
-### Thesis Work
+## Thesis Work
 
 ![Hydrogen-blended Natural Gas Combustion Experiment from Design to Practice](/images/experience/selective_experience_3.1thesis.png)
 
@@ -84,7 +114,7 @@ Originally from the Midwest of China—Chongqing, I hold a B.S. from XJU and hav
 
 <!-- #### Micro Combustion of Pure Hydrogen with Centrally Slotted Bluff Body - 2023
 
-![A diagram of MTPV system based on micro combustion with a bluff body](/images/a-diagram-of-MTPV-system-by-JohnMike.gif)
+![A diagram of MTPV system based on micro combustion with a bluff body](/images/a-diagram-of-MTPV-system-by-Qiaomai.gif)
 
 #### Submerged Combustion System Experiment from Design to Practice - 2022
 
@@ -101,6 +131,6 @@ Originally from the Midwest of China—Chongqing, I hold a B.S. from XJU and hav
 ![Excessive stress position analysis](/images/pip.jpg) -->
 
 
-### Selective Publications
+## Selective Publications
 
 ![Selective Publications](/images/experience/selective_publication.jpg)

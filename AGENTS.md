@@ -27,7 +27,7 @@ Do not overwrite or revert user changes unless the user explicitly asks.
 Preview locally:
 
 ```bash
-hugo server --bind 127.0.0.1 --port 1313 --baseURL http://127.0.0.1:1313/ --disableFastRender
+hugo server --bind 127.0.0.1 --port 1313 --baseURL http://127.0.0.1:1313/ --disableFastRender --renderToMemory
 ```
 
 Build before finishing meaningful site changes:
@@ -60,6 +60,16 @@ Bookshelf content is maintained in `content/bookshelf.md`.
 - The responsive shelf layout is handled by `static/js/bookshelf.js`.
 - The visual shelf and 3D book styling is handled by `static/css/bookshelf.css`.
 - Preserve the original 3D book structure unless the user explicitly asks to redesign it.
+
+## Project And Series Rules
+
+- Keep all essays in `content/posts/`; do not create separate manually maintained post stores for individual projects.
+- Use `series` for a long-running project identity, such as `The Worker Investor` or `Human Capital ETF`.
+- Use `tags` for reusable subjects within an essay, such as `work`, `ownership`, `AI`, or `compounding`.
+- Keep broad content type in `categories`, normally `Essay` for project writing.
+- Maintain stable project descriptions and links in `data/projects.yaml`.
+- Maintain each series introduction once in `content/series/<series-slug>/_index.md`.
+- Project pages must not be added to `params.mainSections`; only posts belong in the homepage article stream.
 
 ## Publishing Rules
 

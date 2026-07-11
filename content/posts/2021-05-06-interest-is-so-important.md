@@ -6,8 +6,8 @@ date: 2021-05-06T23:53:08+08:00
 tags: ["Writing for myself", "Book"]
 categories: ["Life"]
 # categories: ["Life","Code"]
-author: "John Mike"
-# author: ["John Mike", "You"] # multiple authors
+author: "Qiaomai"
+# author: ["Qiaomai", "You"] # multiple authors
 showToc: true
 TocOpen: false
 draft: false

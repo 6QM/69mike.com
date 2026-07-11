@@ -6,8 +6,8 @@ date: 2023-08-08T21:34:10+08:00
 tags: ["Research"]
 categories: ["Work"]
 # categories: ["Life","Code"]
-author: "John Mike"
-# author: ["John Mike", "You"] # multiple authors
+author: "Qiaomai"
+# author: ["Qiaomai", "You"] # multiple authors
 showToc: true
 TocOpen: false
 draft: true
@@ -25,7 +25,7 @@ ShowWordCount: false
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 cover:
-    image: "/images/a-diagram-of-MTPV-system-by-JohnMike.gif"
+    image: "/images/a-diagram-of-MTPV-system-by-Qiaomai.gif"
     alt: "Diagram of a micro thermophotovoltaic combustor system"
     caption: "A micro combustor is utilized in the MTPV system."
     relative: false # when using page bundles set this to true

@@ -1,0 +1,19 @@
+{{- $id := .Get "id" -}}
+{{- $matches := where hugo.Data.projects "id" $id -}}
+{{- with index $matches 0 -}}
+<section class="authored-book" aria-labelledby="authored-book-{{ .id }}">
+  <a class="authored-book-cover" href="{{ .external_url }}" target="_blank" rel="noopener noreferrer" aria-label="Visit {{ .name }}">
+    <img src="{{ .book_cover }}" alt="Cover of {{ .name }}" width="1200" height="1800" loading="eager">
+  </a>
+  <div class="authored-book-details">
+    <p class="authored-book-status">{{ .status }}</p>
+    <h4 id="authored-book-{{ .id }}">{{ .name }}</h4>
+    <p class="authored-book-subtitle">{{ .book_subtitle }}</p>
+    <p>{{ .description }}</p>
+    <div class="authored-book-links">
+      <a class="authored-book-primary" href="{{ .external_url }}" target="_blank" rel="noopener noreferrer">{{ .website_label }}</a>
+      <a href="{{ .series_url }}">{{ .series_label }}</a>
+    </div>
+  </div>
+</section>
+{{- end -}}

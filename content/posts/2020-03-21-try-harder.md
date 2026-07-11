@@ -4,8 +4,8 @@ date: 2020-03-21T17:13:42+08:00
 # weight: 1
 # aliases: ["/first"]
 tags: ["Writing for myself", "Self development"]
-author: "John Mike"
-# author: ["John Mike", "You"] # multiple authors
+author: "Qiaomai"
+# author: ["Qiaomai", "You"] # multiple authors
 showToc: true
 TocOpen: false
 draft: false

@@ -1,0 +1,22 @@
+{{- $photo := .Get "photo" -}}
+<section class="resume-entry{{ with $photo }} resume-entry-with-photo{{ end }}">
+  <div class="resume-entry-brand">
+    <img src="{{ .Get "logo" }}" alt="{{ .Get "organization" }} logo" loading="lazy">
+  </div>
+  <div class="resume-entry-details">
+    <p class="resume-entry-organization">{{ .Get "organization" }}</p>
+    <h3>{{ .Get "title" }}</h3>
+    <p class="resume-entry-meta">
+      {{- with .Get "period" }}<span>{{ . }}</span>{{ end -}}
+      {{- with .Get "location" }}<span>{{ . }}</span>{{ end -}}
+    </p>
+    {{- with .Inner }}
+    <div class="resume-entry-copy">
+      {{ . | markdownify }}
+    </div>
+    {{- end }}
+  </div>
+  {{- with $photo }}
+  <img class="resume-entry-photo" src="{{ . }}" alt="{{ $.Get "photo_alt" }}" loading="lazy">
+  {{- end }}
+</section>

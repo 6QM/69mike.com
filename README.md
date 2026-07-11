@@ -8,6 +8,9 @@ The site is built with Hugo and the PaperMod theme. The repository is intended t
 
 - `content/`: pages and blog posts.
 - `content/bookshelf.md`: bookshelf data and page content.
+- `content/projects/_index.md`: project hub generated from `data/projects.yaml`.
+- `content/series/`: stable introductions for ongoing writing series.
+- `data/projects.yaml`: canonical project names, statuses, origins, descriptions, external links, and series links.
 - `layouts/`: local shortcode and partial overrides.
 - `static/`: images, CSS, JavaScript, files, and favicons copied directly into the site.
 - `docs/website-workflow.md`: personal workflow notes, archive point, publishing plan, and maintenance backlog.
@@ -19,7 +22,7 @@ The site is built with Hugo and the PaperMod theme. The repository is intended t
 Install Hugo Extended, then preview locally:
 
 ```bash
-hugo server --bind 127.0.0.1 --port 1313 --baseURL http://127.0.0.1:1313/ --disableFastRender
+hugo server --bind 127.0.0.1 --port 1313 --baseURL http://127.0.0.1:1313/ --disableFastRender --renderToMemory
 ```
 
 Build the production site:
@@ -33,6 +36,8 @@ The local preview is available at:
 ```text
 http://127.0.0.1:1313/
 ```
+
+`--renderToMemory` keeps preview output separate from the production `public/` directory, so running a production build cannot replace local navigation links with `https://69mike.com` while previewing.
 
 ## Content Workflow
 
@@ -48,6 +53,56 @@ Before publishing a post:
 - Keep tags and categories useful and simple.
 - Use real image paths only.
 - Avoid placeholder front matter copied from templates.
+- All posts under `content/posts/` appear together at `/posts/` and on the homepage article stream.
+
+
+## Project And Essay Workflow
+
+Project metadata is centralized in `data/projects.yaml`. Update that file when adding or changing a project name, status, idea origin, description, external landing page, or related series link. The Projects page reads from this data and does not enter the homepage post stream. Projects with a `series_url` automatically appear in the compact homepage Writing Series links and in the Projects page series directory.
+
+Current project landing pages:
+
+- The Worker Investor: `https://theworkerinvestor.com`
+- Human Capital ETF: `https://humancapitaletf.com`
+- Compounding Yourself: project metadata only for now.
+- Before the Genius: project metadata only for now.
+
+Use Hugo's `series` taxonomy for project identity and `tags` for the subjects discussed by an individual essay. For a new The Worker Investor essay, use:
+
+```yaml
+categories:
+  - Essay
+series:
+  - The Worker Investor
+tags:
+  - work
+  - ownership
+  - optionality
+```
+
+For a new Human Capital ETF essay, use:
+
+```yaml
+categories:
+  - Essay
+series:
+  - Human Capital ETF
+tags:
+  - human capital
+  - learning
+  - compounding
+```
+
+The corresponding archive pages are generated automatically:
+
+- `/series/the-worker-investor/`
+- `/series/human-capital-etf/`
+
+Each series introduction is maintained once in `content/series/<series-slug>/_index.md`. New essays appear automatically on the matching series page while remaining visible in `/posts/`, the homepage, Archive, Search, and Tags. Individual essay pages automatically show their series membership.
+
+Do not use a project name only as a tag. Project identity belongs in `series`; tags should remain reusable subjects such as `work`, `ownership`, `learning`, or `AI`.
+
+Do not describe Human Capital ETF as a real financial ETF, security, or investment fund. It is a personal human-capital allocation framework.
 
 ## Bookshelf Workflow
 

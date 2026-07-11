@@ -6,8 +6,8 @@ date: 2024-09-11T00:00:00+08:00
 tags: ["Translation", "Poetry", "Reflection", "Writing for myself", "Life"]
 categories: ["Life"]
 # categories: ["Life","Code"]
-author: "John Mike"
-# author: ["John Mike", "You"] # multiple authors
+author: "Qiaomai"
+# author: ["Qiaomai", "You"] # multiple authors
 showToc: false
 TocOpen: false
 draft: false

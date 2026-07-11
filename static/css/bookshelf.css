@@ -92,6 +92,95 @@
     );
 }
 
+.authored-book {
+  display: grid;
+  grid-template-columns: minmax(160px, 220px) minmax(0, 1fr);
+  gap: 34px;
+  align-items: start;
+  margin: 20px 0 48px;
+  padding: 0 0 42px;
+  border-bottom: 1px solid var(--border);
+}
+
+.authored-book-cover {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  line-height: 0;
+}
+
+.authored-book-cover img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.authored-book-cover:hover img {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.25);
+}
+
+.authored-book-details {
+  padding-top: 4px;
+}
+
+.authored-book-details h4 {
+  margin: 5px 0 8px;
+  font-size: 1.65rem;
+  line-height: 1.2;
+}
+
+.authored-book-details > p {
+  margin: 0 0 16px;
+}
+
+.authored-book-status {
+  color: var(--secondary);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.authored-book-subtitle {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+.authored-book-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.authored-book-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 7px 13px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--primary);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.authored-book-links a:hover {
+  border-color: var(--primary);
+}
+
+.authored-book-links .authored-book-primary {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: var(--theme);
+}
+
 .bookshelf {
   width: 100%;
   margin-top: 32px;
@@ -294,6 +383,30 @@ z-index: 1; /* 确保书本在背景之上 */
 }
 
 @media (max-width: 640px) {
+  .authored-book {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    margin-bottom: 38px;
+    padding-bottom: 34px;
+  }
+
+  .authored-book-cover {
+    width: min(58vw, 190px);
+  }
+
+  .authored-book-details h4 {
+    font-size: 1.35rem;
+  }
+
+  .authored-book-links {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .authored-book-links a {
+    justify-content: center;
+  }
+
   .bookshelf {
     --shelf-row-pad-x: 12px;
   }
