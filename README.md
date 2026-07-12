@@ -4,6 +4,20 @@ Personal Hugo blog source for `69mike.com`.
 
 The site is built with Hugo and the PaperMod theme. The repository is intended to keep source content, configuration, custom shortcodes, and workflow documentation under version control. Generated output in `public/` is build artifact, not source.
 
+## Author Guide
+
+For daily writing, maintenance, Git publishing, VPS deployment, verification, and rollback, start with:
+
+**[`docs/website-workflow.md`](docs/website-workflow.md)**
+
+The guide is written for the site author and explains the complete sequence:
+
+```text
+Edit -> Preview -> Build -> Commit -> Push -> Deploy -> Verify
+```
+
+Remember: a commit is local, a push updates GitHub, and only the VPS deploy updates the live `69mike.com` website.
+
 ## Project Layout
 
 - `content/`: pages and blog posts.

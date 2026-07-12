@@ -11,6 +11,8 @@ This file is the shared agent guide for Codex, Claude Code, and other AI coding 
 
 Do not overwrite or revert user changes unless the user explicitly asks.
 
+If a change modifies the author workflow, content structure, Git process, deployment target, or rollback process, update `docs/website-workflow.md` in the same task.
+
 ## Stack
 
 - Static site generator: Hugo Extended.
