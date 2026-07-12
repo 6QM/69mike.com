@@ -21,22 +21,7 @@ ShowPostNavLinks: true
 ShowWordCount: false
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
-images: ["/images/worker-investor/fig-twi-start-01-after-work-desk.jpg"]
 ---
-
-{{< editorial-figure
-  id="fig-twi-start-01-after-work-desk"
-  class="wi-figure-photo"
-  src="/images/worker-investor/fig-twi-start-01-after-work-desk.jpg"
-  alt="An ordinary worker's desk after work, with a closed laptop, engineering notebook, calendar, books, and a simple allocation sketch."
-  width="1536"
-  height="1024"
-  loading="eager"
-  label="Figure 1"
-  title="The Worker Investor begins inside ordinary work."
-  caption="A worker does not need to escape the working system before beginning to allocate wages, experience, and attention toward assets that can remain."
-  source="Editorial image generated and art-directed for this essay."
->}}
 
 The Worker Investor begins by rejecting a false choice.
 
@@ -49,18 +34,6 @@ That is what I mean by **The Worker Investor**.
 A Worker Investor is still fundamentally a worker. He or she works inside a company, institution, profession, or economic system and exchanges time, skill, attention, and responsibility for income. But the labor does not end with the salary. Part of that income, experience, knowledge, and remaining time is deliberately converted into assets that can continue creating value in the future.
 
 The goal is not to deny work. It is to make more of our work survive.
-
-{{< editorial-figure
-  id="fig-twi-start-02-identity-transition"
-  src="/images/worker-investor/fig-twi-start-02-identity-transition.svg"
-  srcMobile="/images/worker-investor/fig-twi-start-02-identity-transition-mobile.svg"
-  alt="A left-to-right path from Worker through Allocation to Worker Investor, Ownership, and branching future Options."
-  width="1200"
-  height="620"
-  label="Figure 2"
-  title="The shift begins at allocation, not at escape."
-  caption="The job may remain the same while part of its output is deliberately converted into ownership and possible future choices. The final dashed path marks optionality as conditional, not guaranteed."
->}}
 
 ## How the Idea Developed
 
@@ -84,18 +57,6 @@ Payday is when a worker decides what to do with the financial result of past lab
 
 The Worker Investor is therefore not an identity reserved for someone who has already escaped work. It is an identity practiced while still working.
 
-{{< editorial-figure
-  id="fig-twi-start-03-two-allocation-cycles"
-  src="/images/worker-investor/fig-twi-start-03-two-allocation-cycles.svg"
-  srcMobile="/images/worker-investor/fig-twi-start-03-two-allocation-cycles-mobile.svg"
-  alt="Two connected cycles show wage becoming saving and ownership on payday, while experience becomes capability and public work between paydays."
-  width="1200"
-  height="760"
-  label="Figure 3"
-  title="Allocate money on payday; allocate yourself between paydays."
-  caption="Financial resilience preserves part of past labor. Human-capital allocation expands future capacity. Each cycle can create room for better choices in the other."
->}}
-
 ## The Worker and the Worker Investor
 
 A worker and a Worker Investor may have the same job, salary, and number of hours in a day. The difference lies in what they believe the work is producing.
@@ -109,18 +70,6 @@ This does not mean extracting private information from a company or turning ever
 The Worker Investor gradually builds several kinds of assets: financial assets such as savings, diversified ETFs, bonds, and pensions; human-capital assets such as health, expertise, judgment, and AI fluency; knowledge assets such as writing, research, and reusable methods; distribution assets such as reputation, websites, audiences, and professional networks; and system assets such as software, templates, products, and automated workflows.
 
 The worker receives a wage. The Worker Investor tries to make part of that wage—and part of the experience that produced it—remain available for future use.
-
-{{< editorial-figure
-  id="fig-twi-start-04-asset-conversion"
-  src="/images/worker-investor/fig-twi-start-04-asset-conversion.svg"
-  srcMobile="/images/worker-investor/fig-twi-start-04-asset-conversion-mobile.svg"
-  alt="Labor, wage, and experience feed financial, human-capital, knowledge, distribution, and system assets that may support future time, choice, and resilience."
-  width="1200"
-  height="720"
-  label="Figure 4"
-  title="What can remain after a workday ends?"
-  caption="The goal is not to monetize every hour. It is to preserve useful results as financial, human-capital, knowledge, distribution, or system assets."
->}}
 
 ## Why Finance Matters
 
@@ -163,18 +112,6 @@ The Human Capital ETF is the practical framework inside The Worker Investor.
 **Distribution** allows capability to travel. Writing, public projects, books, videos, networks, reputation, and personal websites turn private learning into visible and reusable evidence.
 
 **Meta** manages the entire portfolio. Reflection, learning systems, decision-making, attention management, project selection, and regular rebalancing determine whether the other positions reinforce one another or become scattered activities.
-
-{{< editorial-figure
-  id="fig-twi-start-05-human-capital-etf"
-  src="/images/worker-investor/fig-twi-start-05-human-capital-etf.svg"
-  srcMobile="/images/worker-investor/fig-twi-start-05-human-capital-etf-mobile.svg"
-  alt="A Human Capital ETF stack with Core as the base, Growth above it, Distribution moving outward, and Meta forming a rebalancing loop around the portfolio."
-  width="1200"
-  height="760"
-  label="Figure 5"
-  title="Human Capital ETF is an allocation system, not a skill collection."
-  caption="Core protects the base. Growth expands future capacity. Distribution allows capability to travel. Meta selects and rebalances the portfolio. The proportions are conceptual, not measured."
->}}
 
 The framework is not about maximizing every skill. It is about deciding how to allocate limited time and energy among assets with different risks, time horizons, and possible returns.
 
