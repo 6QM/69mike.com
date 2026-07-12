@@ -20,7 +20,7 @@ hideSummary: false
 searchHidden: false
 ShowReadingTime: false
 ShowBreadCrumbs: false
-ShowPostNavLinks: false
+ShowPostNavLinks: true
 ShowWordCount: false
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
