@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 980" role="img" aria-labelledby="title desc">
+  <title id="title">Worker to Worker Investor identity transition</title>
+  <desc id="desc">A top-to-bottom path from worker through allocation to Worker Investor, ownership, and possible future options.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0l9 5-9 5z" fill="#343842"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0l9 5-9 5z" fill="#4B3FB4"/>
+    </marker>
+  </defs>
+  <rect width="600" height="980" fill="#F6F4ED"/>
+  <g font-family="Inter, Arial, sans-serif" letter-spacing="0">
+    <text x="54" y="60" fill="#343842" font-size="22" font-weight="800">PRESENT CONDITION</text>
+    <rect x="54" y="92" width="492" height="126" rx="4" fill="#FFFFFB" stroke="#101114" stroke-width="4"/>
+    <rect x="54" y="92" width="12" height="126" fill="#B85F3B"/>
+    <text x="92" y="148" fill="#101114" font-size="32" font-weight="800">WORKER</text>
+    <text x="92" y="184" fill="#343842" font-size="23">Time + skill for wage</text>
+
+    <path d="M300 218V274" fill="none" stroke="#343842" stroke-width="5" marker-end="url(#arrow)"/>
+    <circle cx="300" cy="344" r="66" fill="#FFFFFB" stroke="#C6A64F" stroke-width="7"/>
+    <text x="300" y="338" text-anchor="middle" fill="#101114" font-size="25" font-weight="800">ALLOCATE</text>
+    <text x="300" y="370" text-anchor="middle" fill="#343842" font-size="20">money + self</text>
+
+    <path d="M300 410V466" fill="none" stroke="#343842" stroke-width="5" marker-end="url(#arrow)"/>
+    <rect x="54" y="476" width="492" height="150" rx="4" fill="#FFFFFB" stroke="#101114" stroke-width="6"/>
+    <rect x="54" y="476" width="492" height="12" fill="#0D6B57"/>
+    <text x="92" y="540" fill="#101114" font-size="30" font-weight="800">WORKER INVESTOR</text>
+    <text x="92" y="580" fill="#343842" font-size="22">Work still matters. More of it remains.</text>
+
+    <path d="M300 626V682" fill="none" stroke="#343842" stroke-width="5" marker-end="url(#arrow)"/>
+    <rect x="186" y="690" width="228" height="112" rx="4" fill="#0D6B57" fill-opacity=".14" stroke="#0D6B57" stroke-width="4"/>
+    <text x="300" y="740" text-anchor="middle" fill="#101114" font-size="27" font-weight="800">OWNERSHIP</text>
+    <text x="300" y="774" text-anchor="middle" fill="#343842" font-size="21">assets that remain</text>
+
+    <path d="M300 802V842" fill="none" stroke="#4B3FB4" stroke-width="5" stroke-dasharray="11 9" marker-end="url(#arrowPurple)"/>
+    <path d="M300 850c-70 0-84 42-150 42M300 850c70 0 84 42 150 42" fill="none" stroke="#4B3FB4" stroke-width="5"/>
+    <circle cx="144" cy="892" r="12" fill="#4B3FB4"/>
+    <circle cx="456" cy="892" r="12" fill="#4B3FB4"/>
+    <text x="300" y="936" text-anchor="middle" fill="#4B3FB4" font-size="25" font-weight="800">POSSIBLE FUTURE OPTIONS</text>
+  </g>
+</svg>
+

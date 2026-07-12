@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Asset conversion after a workday</title>
+  <desc id="desc">Labor, wage, and experience feed five asset classes that can remain available for future use and possible choices.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0l9 5-9 5z" fill="#343842"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0l9 5-9 5z" fill="#4B3FB4"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="720" fill="#F6F4ED"/>
+  <g font-family="Inter, Arial, sans-serif" letter-spacing="0">
+    <text x="70" y="82" fill="#343842" font-size="18" font-weight="800">WHAT ENTERS</text>
+    <text x="390" y="82" fill="#0D6B57" font-size="18" font-weight="800">WHAT CAN REMAIN</text>
+    <text x="954" y="82" fill="#4B3FB4" font-size="18" font-weight="800">FUTURE USE</text>
+
+    <rect x="70" y="142" width="220" height="400" rx="4" fill="#FFFFFB" stroke="#101114" stroke-width="3"/>
+    <rect x="70" y="142" width="10" height="400" fill="#B85F3B"/>
+    <g fill="#101114" font-size="25" font-weight="800">
+      <text x="112" y="228">LABOR</text>
+      <text x="112" y="342">WAGE</text>
+      <text x="112" y="456">EXPERIENCE</text>
+    </g>
+    <g fill="#737984" font-size="16">
+      <text x="112" y="258">time + skill</text>
+      <text x="112" y="372">cash flow</text>
+      <text x="112" y="486">problems + judgment</text>
+    </g>
+
+    <path d="M290 342H350" fill="none" stroke="#343842" stroke-width="4" marker-end="url(#arrow)"/>
+
+    <g>
+      <rect x="370" y="130" width="470" height="78" rx="4" fill="#0D6B57" fill-opacity=".10" stroke="#0D6B57" stroke-width="2"/>
+      <rect x="392" y="153" width="28" height="28" fill="#0D6B57"/>
+      <text x="448" y="164" fill="#101114" font-size="21" font-weight="800">FINANCIAL</text>
+      <text x="448" y="190" fill="#343842" font-size="16">saving, diversified ownership, pension</text>
+
+      <rect x="370" y="220" width="470" height="78" rx="4" fill="#0D6B57" fill-opacity=".10" stroke="#0D6B57" stroke-width="2"/>
+      <rect x="392" y="243" width="28" height="28" fill="#0D6B57"/>
+      <text x="448" y="254" fill="#101114" font-size="21" font-weight="800">HUMAN CAPITAL</text>
+      <text x="448" y="280" fill="#343842" font-size="16">health, expertise, judgment, AI fluency</text>
+
+      <rect x="370" y="310" width="470" height="78" rx="4" fill="#0D6B57" fill-opacity=".10" stroke="#0D6B57" stroke-width="2"/>
+      <rect x="392" y="333" width="28" height="28" fill="#0D6B57"/>
+      <text x="448" y="344" fill="#101114" font-size="21" font-weight="800">KNOWLEDGE</text>
+      <text x="448" y="370" fill="#343842" font-size="16">writing, research, reusable methods</text>
+
+      <rect x="370" y="400" width="470" height="78" rx="4" fill="#2F6597" fill-opacity=".10" stroke="#2F6597" stroke-width="2"/>
+      <rect x="392" y="423" width="28" height="28" fill="#2F6597"/>
+      <text x="448" y="434" fill="#101114" font-size="21" font-weight="800">DISTRIBUTION</text>
+      <text x="448" y="460" fill="#343842" font-size="16">website, public work, reputation, network</text>
+
+      <rect x="370" y="490" width="470" height="78" rx="4" fill="#0D6B57" fill-opacity=".10" stroke="#0D6B57" stroke-width="2"/>
+      <rect x="392" y="513" width="28" height="28" fill="#0D6B57"/>
+      <text x="448" y="524" fill="#101114" font-size="21" font-weight="800">SYSTEMS</text>
+      <text x="448" y="550" fill="#343842" font-size="16">software, templates, products, workflows</text>
+    </g>
+
+    <g fill="none" stroke="#343842" stroke-width="3">
+      <path d="M840 169H902V342"/>
+      <path d="M840 259H902"/>
+      <path d="M840 349H902"/>
+      <path d="M840 439H902"/>
+      <path d="M840 529H902V342"/>
+    </g>
+    <path d="M902 342H958" fill="none" stroke="#4B3FB4" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrowPurple)"/>
+
+    <path d="M980 342c44 0 38-104 96-104M980 342c52 0 48 0 104 0M980 342c44 0 38 104 96 104" fill="none" stroke="#4B3FB4" stroke-width="4"/>
+    <circle cx="1082" cy="238" r="12" fill="#4B3FB4"/>
+    <circle cx="1090" cy="342" r="12" fill="#4B3FB4"/>
+    <circle cx="1082" cy="446" r="12" fill="#4B3FB4"/>
+    <g fill="#343842" font-size="16" font-weight="700">
+      <text x="1012" y="212">time</text>
+      <text x="1012" y="316">choice</text>
+      <text x="1012" y="420">resilience</text>
+    </g>
+
+    <line x1="70" y1="624" x2="1130" y2="624" stroke="#101114" stroke-opacity=".16" stroke-width="2"/>
+    <text x="70" y="666" fill="#343842" font-size="20">The point is not to monetize every hour. It is to stop every useful result from disappearing.</text>
+  </g>
+</svg>
+

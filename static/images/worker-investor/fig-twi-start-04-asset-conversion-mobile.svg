@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 1120" role="img" aria-labelledby="title desc">
+  <title id="title">Asset conversion after a workday</title>
+  <desc id="desc">Labor, wage, and experience feed five durable asset classes and possible future uses.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0l9 5-9 5z" fill="#343842"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0l9 5-9 5z" fill="#4B3FB4"/>
+    </marker>
+  </defs>
+  <rect width="600" height="1120" fill="#F6F4ED"/>
+  <g font-family="Inter, Arial, sans-serif" letter-spacing="0">
+    <text x="42" y="54" fill="#343842" font-size="22" font-weight="800">WHAT ENTERS</text>
+    <rect x="42" y="82" width="516" height="122" rx="4" fill="#FFFFFB" stroke="#101114" stroke-width="4"/>
+    <rect x="42" y="82" width="12" height="122" fill="#B85F3B"/>
+    <g fill="#101114" font-size="25" font-weight="800">
+      <text x="82" y="138">LABOR</text>
+      <text x="248" y="138">WAGE</text>
+      <text x="396" y="138">EXPERIENCE</text>
+    </g>
+    <text x="82" y="174" fill="#737984" font-size="19">time · cash flow · judgment</text>
+    <path d="M300 204V256" fill="none" stroke="#343842" stroke-width="5" marker-end="url(#arrow)"/>
+
+    <text x="42" y="300" fill="#0D6B57" font-size="22" font-weight="800">WHAT CAN REMAIN</text>
+    <g>
+      <rect x="42" y="326" width="516" height="92" rx="4" fill="#0D6B57" fill-opacity=".10" stroke="#0D6B57" stroke-width="3"/>
+      <rect x="66" y="354" width="34" height="34" fill="#0D6B57"/>
+      <text x="126" y="362" fill="#101114" font-size="25" font-weight="800">FINANCIAL</text>
+      <text x="126" y="392" fill="#343842" font-size="19">saving · diversified ownership · pension</text>
+
+      <rect x="42" y="432" width="516" height="92" rx="4" fill="#0D6B57" fill-opacity=".10" stroke="#0D6B57" stroke-width="3"/>
+      <rect x="66" y="460" width="34" height="34" fill="#0D6B57"/>
+      <text x="126" y="468" fill="#101114" font-size="25" font-weight="800">HUMAN CAPITAL</text>
+      <text x="126" y="498" fill="#343842" font-size="19">health · expertise · judgment · AI fluency</text>
+
+      <rect x="42" y="538" width="516" height="92" rx="4" fill="#0D6B57" fill-opacity=".10" stroke="#0D6B57" stroke-width="3"/>
+      <rect x="66" y="566" width="34" height="34" fill="#0D6B57"/>
+      <text x="126" y="574" fill="#101114" font-size="25" font-weight="800">KNOWLEDGE</text>
+      <text x="126" y="604" fill="#343842" font-size="19">writing · research · reusable methods</text>
+
+      <rect x="42" y="644" width="516" height="92" rx="4" fill="#2F6597" fill-opacity=".10" stroke="#2F6597" stroke-width="3"/>
+      <rect x="66" y="672" width="34" height="34" fill="#2F6597"/>
+      <text x="126" y="680" fill="#101114" font-size="25" font-weight="800">DISTRIBUTION</text>
+      <text x="126" y="710" fill="#343842" font-size="19">website · public work · reputation · network</text>
+
+      <rect x="42" y="750" width="516" height="92" rx="4" fill="#0D6B57" fill-opacity=".10" stroke="#0D6B57" stroke-width="3"/>
+      <rect x="66" y="778" width="34" height="34" fill="#0D6B57"/>
+      <text x="126" y="786" fill="#101114" font-size="25" font-weight="800">SYSTEMS</text>
+      <text x="126" y="816" fill="#343842" font-size="19">software · templates · products · workflows</text>
+    </g>
+
+    <path d="M300 842V894" fill="none" stroke="#4B3FB4" stroke-width="5" stroke-dasharray="11 9" marker-end="url(#arrowPurple)"/>
+    <text x="42" y="930" fill="#4B3FB4" font-size="22" font-weight="800">FUTURE USE</text>
+    <path d="M110 978H490" fill="none" stroke="#4B3FB4" stroke-width="5"/>
+    <circle cx="110" cy="978" r="13" fill="#4B3FB4"/>
+    <circle cx="300" cy="978" r="13" fill="#4B3FB4"/>
+    <circle cx="490" cy="978" r="13" fill="#4B3FB4"/>
+    <g fill="#101114" font-size="23" font-weight="800" text-anchor="middle">
+      <text x="110" y="1022">TIME</text>
+      <text x="300" y="1022">CHOICE</text>
+      <text x="490" y="1022">RESILIENCE</text>
+    </g>
+    <text x="42" y="1082" fill="#343842" font-size="20">Preserve useful results. Do not monetize every hour.</text>
+  </g>
+</svg>
+

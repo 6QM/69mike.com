@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Payday and between-payday allocation cycles</title>
+  <desc id="desc">Two connected cycles show wage becoming ownership on payday and experience becoming capability and public work between paydays.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0l9 5-9 5z" fill="#343842"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0l9 5-9 5z" fill="#4B3FB4"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="760" fill="#F6F4ED"/>
+  <g font-family="Inter, Arial, sans-serif" letter-spacing="0">
+    <text x="76" y="76" fill="#B85F3B" font-size="18" font-weight="800">ON PAYDAY</text>
+    <text x="76" y="112" fill="#101114" font-size="30" font-weight="800">Allocate the result of past labor.</text>
+    <text x="648" y="76" fill="#0D6B57" font-size="18" font-weight="800">BETWEEN PAYDAYS</text>
+    <text x="648" y="112" fill="#101114" font-size="30" font-weight="800">Allocate the capacity for future labor.</text>
+
+    <line x1="600" y1="62" x2="600" y2="580" stroke="#101114" stroke-opacity=".16" stroke-width="2"/>
+
+    <g>
+      <circle cx="154" cy="286" r="62" fill="#B85F3B" fill-opacity=".14" stroke="#B85F3B" stroke-width="4"/>
+      <text x="154" y="280" text-anchor="middle" fill="#101114" font-size="20" font-weight="800">WAGE</text>
+      <text x="154" y="310" text-anchor="middle" fill="#343842" font-size="15">cash flow</text>
+      <path d="M216 286H308" fill="none" stroke="#343842" stroke-width="4" marker-end="url(#arrow)"/>
+      <circle cx="378" cy="286" r="62" fill="#C6A64F" fill-opacity=".16" stroke="#C6A64F" stroke-width="4"/>
+      <text x="378" y="280" text-anchor="middle" fill="#101114" font-size="20" font-weight="800">SAVE</text>
+      <text x="378" y="310" text-anchor="middle" fill="#343842" font-size="15">preserve</text>
+      <path d="M440 286H500" fill="none" stroke="#343842" stroke-width="4" marker-end="url(#arrow)"/>
+      <rect x="506" y="224" width="70" height="124" rx="4" fill="#0D6B57" fill-opacity=".14" stroke="#0D6B57" stroke-width="4"/>
+      <text x="541" y="280" text-anchor="middle" fill="#101114" font-size="17" font-weight="800">OWN</text>
+      <text x="541" y="308" text-anchor="middle" fill="#343842" font-size="14">assets</text>
+      <path d="M541 348C541 438 154 438 154 348" fill="none" stroke="#343842" stroke-width="3" stroke-dasharray="9 8" marker-end="url(#arrow)"/>
+      <text x="340" y="424" text-anchor="middle" fill="#737984" font-size="16">financial resilience</text>
+    </g>
+
+    <g>
+      <circle cx="724" cy="286" r="62" fill="#C6A64F" fill-opacity=".16" stroke="#C6A64F" stroke-width="4"/>
+      <text x="724" y="280" text-anchor="middle" fill="#101114" font-size="18" font-weight="800">EXPERIENCE</text>
+      <text x="724" y="310" text-anchor="middle" fill="#343842" font-size="15">real work</text>
+      <path d="M786 286H860" fill="none" stroke="#343842" stroke-width="4" marker-end="url(#arrow)"/>
+      <circle cx="930" cy="286" r="62" fill="#0D6B57" fill-opacity=".14" stroke="#0D6B57" stroke-width="4"/>
+      <text x="930" y="280" text-anchor="middle" fill="#101114" font-size="18" font-weight="800">CAPABILITY</text>
+      <text x="930" y="310" text-anchor="middle" fill="#343842" font-size="15">judgment</text>
+      <path d="M992 286H1044" fill="none" stroke="#343842" stroke-width="4" marker-end="url(#arrow)"/>
+      <rect x="1050" y="224" width="84" height="124" rx="4" fill="#2F6597" fill-opacity=".14" stroke="#2F6597" stroke-width="4"/>
+      <text x="1092" y="276" text-anchor="middle" fill="#101114" font-size="16" font-weight="800">PUBLIC</text>
+      <text x="1092" y="302" text-anchor="middle" fill="#101114" font-size="16" font-weight="800">WORK</text>
+      <path d="M1092 348C1092 438 724 438 724 348" fill="none" stroke="#343842" stroke-width="3" stroke-dasharray="9 8" marker-end="url(#arrow)"/>
+      <text x="912" y="424" text-anchor="middle" fill="#737984" font-size="16">reputation + learning</text>
+    </g>
+
+    <path d="M472 548C556 500 642 500 728 548" fill="none" stroke="#4B3FB4" stroke-width="4" stroke-dasharray="11 9" marker-end="url(#arrowPurple)"/>
+    <path d="M728 584C642 632 556 632 472 584" fill="none" stroke="#4B3FB4" stroke-width="4" stroke-dasharray="11 9" marker-end="url(#arrowPurple)"/>
+    <rect x="430" y="532" width="340" height="72" rx="4" fill="#FFFFFB" stroke="#4B3FB4" stroke-width="3"/>
+    <text x="600" y="563" text-anchor="middle" fill="#4B3FB4" font-size="17" font-weight="800">BETTER CHOICES</text>
+    <text x="600" y="589" text-anchor="middle" fill="#343842" font-size="15">the two portfolios reinforce each other</text>
+
+    <line x1="76" y1="682" x2="1124" y2="682" stroke="#101114" stroke-opacity=".16" stroke-width="2"/>
+    <text x="76" y="720" fill="#343842" font-size="19">Two clocks, one practice: preserve past labor and expand future capacity.</text>
+  </g>
+</svg>
+
