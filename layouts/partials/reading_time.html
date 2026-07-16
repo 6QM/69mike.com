@@ -1,0 +1,17 @@
+{{- /*
+Calculate mixed-language reading time instead of letting Hugo choose a single
+word-counting mode for the whole page. The rates match Hugo's defaults:
+500 CJK characters/minute and 212 non-CJK words/minute.
+*/ -}}
+{{- $plain := .Plain | htmlUnescape -}}
+{{- $cjkPattern := `[\p{Han}\p{Hiragana}\p{Katakana}\p{Hangul}]` -}}
+{{- $cjkCharacters := len (findRE $cjkPattern $plain) -}}
+{{- $nonCJKText := replaceRE $cjkPattern " " $plain -}}
+{{- $nonCJKWords := len (findRE `[\p{L}\p{N}]+([-’'][\p{L}\p{N}]+)*` $nonCJKText) -}}
+{{- $cjkMinutes := div (float $cjkCharacters) 500.0 -}}
+{{- $nonCJKMinutes := div (float $nonCJKWords) 212.0 -}}
+{{- $minutes := int (math.Ceil (add $cjkMinutes $nonCJKMinutes)) -}}
+{{- if lt $minutes 1 -}}
+  {{- $minutes = 1 -}}
+{{- end -}}
+{{- return $minutes -}}
