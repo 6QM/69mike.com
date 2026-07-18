@@ -478,10 +478,52 @@ Keep all articles in content/posts and use series for project identity.
 Run a Hugo production build and git diff --check before finishing.
 Do not commit, push, or deploy unless I explicitly ask.
 When I ask for deployment, push the intended commit to GitHub first,
-then run scripts/deploy-vps.sh and verify the live URLs.
+merge it into master, wait for deploy-vps.yml to finish, record its backup path,
+and verify the live URLs. Use scripts/deploy-vps.sh only as a local fallback.
 ```
 
-## 19. 历史归档点
+## 19. 自动部署故障排查
+
+先查看最近的正式部署：
+
+```bash
+gh run list --workflow deploy-vps.yml --branch master --limit 5
+gh run view <run-id>
+gh run view <run-id> --log-failed
+```
+
+按失败步骤处理：
+
+- `Checkout` 失败：检查 GitHub 或仓库权限状态，不要直接绕过源码版本。
+- `Install Hugo` 或 `Build` 失败：在本地使用仓库要求的 Hugo 版本运行 `hugo --minify --cleanDestinationDir`，修复源码后提交新 commit。
+- `Configure production SSH access` 失败：确认仓库 Actions Secrets 中存在 `VPS_SSH_PRIVATE_KEY` 和 `VPS_KNOWN_HOSTS`；不要把 secret 内容打印到日志。
+- SSH、SCP 或 host key 失败：检查 VPS 是否在线、部署公钥是否仍在 `~mikee/.ssh/authorized_keys`，以及 VPS host key 是否发生了经过确认的变更。
+- 服务器备份或替换失败：检查 `/var/www/backups`、`/var/www/blog` 的写权限与磁盘空间。脚本在开始替换后失败会自动恢复本次备份。
+- 部署成功但健康检查失败：先看 Nginx 状态、DNS 和 TLS，再检查线上首页与 `/bookshelf/`；不要因为单次网络波动立刻删除备份。
+
+修复后，优先提交一个可追踪的新 commit。若源码无需变化，可在 GitHub Actions 页面重新运行失败任务，或手动触发 `Deploy Hugo site to production VPS`。只有 GitHub Actions 本身不可用时，才从干净且与 `origin/master` 一致的本地 `master` 运行：
+
+```bash
+git switch master
+git pull --ff-only origin master
+test "$(git rev-parse HEAD)" = "$(git rev-parse origin/master)"
+./scripts/deploy-vps.sh
+```
+
+### 部署密钥轮换
+
+生产 workflow 使用独立部署密钥，不使用仓库代码中的凭据。轮换时应遵循这个顺序：
+
+1. 创建新的专用 Ed25519 密钥，私钥不设为仓库文件。
+2. 先把新公钥加入 VPS 用户 `mikee` 的 `authorized_keys`。
+3. 用新密钥进行一次独立 SSH 登录测试。
+4. 更新 GitHub Actions Secret `VPS_SSH_PRIVATE_KEY`。
+5. 手动触发 production workflow 并确认部署成功。
+6. 最后从 VPS 移除旧公钥。
+
+VPS host key 只有在确认服务器确实重装或更换密钥后才能更新 `VPS_KNOWN_HOSTS`。不要为了跳过 SSH 警告而关闭 host key 验证。
+
+## 20. 历史归档点
 
 2026-07-06 与当时线上版本匹配的归档：
 
@@ -491,7 +533,7 @@ then run scripts/deploy-vps.sh and verify the live URLs.
 
 归档只用于历史恢复。日常新工作应从最新 `master` 创建分支，不要继续从旧归档点创建普通内容分支。
 
-## 20. 作者发布清单
+## 21. 作者发布清单
 
 ```text
 [ ] 我修改的是源码，不是 public/
@@ -504,10 +546,10 @@ then run scripts/deploy-vps.sh and verify the live URLs.
 [ ] git diff --check 通过
 [ ] 没有密码、私钥或未公开文件
 [ ] 已 commit
-[ ] 已 push 到 GitHub
+[ ] 工作分支已 push 到 GitHub
 [ ] master 指向预期 commit
-[ ] 已运行 scripts/deploy-vps.sh
-[ ] 已记录 VPS backup 路径
+[ ] deploy-vps.yml 已成功完成
+[ ] 已从 workflow 日志记录 VPS backup 路径
 [ ] 线上关键页面返回 200
 [ ] 线上手机端视觉正常
 ```
