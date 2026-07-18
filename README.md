@@ -13,10 +13,10 @@ For daily writing, maintenance, Git publishing, VPS deployment, verification, an
 The guide is written for the site author and explains the complete sequence:
 
 ```text
-Edit -> Preview -> Build -> Commit -> Push -> Deploy -> Verify
+Edit -> Preview -> Build -> Commit -> Push branch -> Merge master -> Auto deploy -> Verify
 ```
 
-Remember: a commit is local, a push updates GitHub, and only the VPS deploy updates the live `69mike.com` website.
+Remember: a commit is local. Pushing or merging to `master` updates GitHub and triggers the production VPS deployment automatically.
 
 ## Project Layout
 
@@ -28,7 +28,8 @@ Remember: a commit is local, a push updates GitHub, and only the VPS deploy upda
 - `layouts/`: local shortcode and partial overrides.
 - `static/`: images, CSS, JavaScript, files, and favicons copied directly into the site.
 - `docs/website-workflow.md`: personal workflow notes, archive point, publishing plan, and maintenance backlog.
-- `.github/workflows/deploy.yml`: optional GitHub Pages deployment workflow.
+- `.github/workflows/deploy.yml`: backup GitHub Pages deployment workflow.
+- `.github/workflows/deploy-vps.yml`: production VPS deployment workflow.
 - `AGENTS.md`: shared instructions for Codex, Claude Code, and other AI agents.
 
 ## Local Development
@@ -135,23 +136,23 @@ The current live deployment target is the VPS serving `69mike.com`:
 - Web root: `/var/www/blog`
 - Nginx config: `/etc/nginx/sites-enabled/69mike.com`
 
-Build locally, package `public/`, upload it with the deploy key, back up `/var/www/blog`, then replace the web root.
+Every push or merge to `master` triggers `.github/workflows/deploy-vps.yml`. It builds the site, packages `public/`, uploads it with a dedicated Actions deploy key, backs up `/var/www/blog`, replaces the web root, and verifies the live site.
 
-For the normal VPS deploy path, run:
+For an intentional local fallback or manual redeploy, run:
 
 ```bash
 ./scripts/deploy-vps.sh
 ```
 
-GitHub Pages is configured as an optional workflow-based deployment path, but the domain DNS currently points to the VPS, not GitHub Pages.
+GitHub Pages remains a backup workflow-based deployment path, but the domain DNS points to the VPS and the VPS workflow is the production path.
 
 The normal publishing path is:
 
 1. Edit source files on a branch.
 2. Run a local Hugo build.
-3. Commit and push.
-4. Build `public/`.
-5. Deploy `public/` to the VPS web root.
+3. Commit and push the working branch.
+4. Merge the reviewed change into `master`.
+5. GitHub Actions builds, backs up, deploys, and verifies the VPS automatically.
 
 GitHub Pages is configured with source set to GitHub Actions. The custom domain is set to `69mike.com`, but DNS currently remains on the VPS.
 

@@ -7,18 +7,18 @@
 网站维护中最容易混淆的是 `commit`、`push` 和 `deploy`。它们是三个不同动作：
 
 1. `git commit`：只在本地保存一个版本，不会更新 GitHub，也不会更新线上网站。
-2. `git push`：把 commit 上传到 GitHub。推送到 `master` 会触发 GitHub Actions，但目前 `69mike.com` 的真实流量仍由 VPS 提供。
-3. `./scripts/deploy-vps.sh`：把 Hugo 构建结果发布到 VPS，完成后线上网站才真正更新。
+2. `git push`：把 commit 上传到 GitHub。普通工作分支不会更新网站；推送或合并到 `master` 会触发 GitHub Actions 自动部署 VPS。
+3. `./scripts/deploy-vps.sh`：本地人工部署入口，供手动重试或自动化不可用时使用；GitHub Actions 也复用同一个脚本。
 
 一句话记忆：
 
 ```text
-Edit -> Preview -> Build -> Commit -> Push -> Deploy -> Verify
+Edit -> Preview -> Build -> Commit -> Push branch -> Merge master -> Auto deploy -> Verify
 ```
 
 ## 2. 当前网站的真实来源
 
-- 本地源码目录：`/Users/liuqiaomai/Library/CloudStorage/OneDrive-Personal/00_To_Do/D_Application/Blog/John/John - Copy`
+- 本地源码目录：`/Users/liuqiaomai/Documents/69mike.com`
 - GitHub 仓库：`https://github.com/6QM/69mike.com`
 - 默认分支：`master`
 - Hugo 配置：`hugo.yml`
@@ -26,7 +26,8 @@ Edit -> Preview -> Build -> Commit -> Push -> Deploy -> Verify
 - 线上域名：`https://69mike.com`
 - 当前线上服务器：VPS `67.209.179.214`
 - VPS 网站目录：`/var/www/blog`
-- 自动部署脚本：`scripts/deploy-vps.sh`
+- 生产自动部署：`.github/workflows/deploy-vps.yml`
+- 共用部署脚本：`scripts/deploy-vps.sh`
 
 GitHub 保存的是源码。`public/` 是 Hugo 自动生成的构建产物，已经被 `.gitignore` 忽略，不应手动编辑或提交。
 
@@ -46,7 +47,8 @@ GitHub 保存的是源码。`public/` 是 Hugo 自动生成的构建产物，已
 - `static/images/`：直接复制到网站的图片。
 - `static/files/`：PDF、简历等公开文件。
 - `scripts/deploy-vps.sh`：VPS 发布脚本。
-- `.github/workflows/deploy.yml`：GitHub Pages 构建流程，目前不是线上主发布目标。
+- `.github/workflows/deploy.yml`：GitHub Pages 备用构建与发布流程，不是线上主发布目标。
+- `.github/workflows/deploy-vps.yml`：正式 VPS 自动部署流程。
 - `AGENTS.md`：给 AI agent 读取的项目约束。
 
 ## 4. 每次开始工作前
@@ -54,7 +56,7 @@ GitHub 保存的是源码。`public/` 是 Hugo 自动生成的构建产物，已
 进入项目目录：
 
 ```bash
-cd "/Users/liuqiaomai/Library/CloudStorage/OneDrive-Personal/00_To_Do/D_Application/Blog/John/John - Copy"
+cd "/Users/liuqiaomai/Documents/69mike.com"
 ```
 
 检查当前状态：
@@ -321,24 +323,45 @@ git rev-parse HEAD
 git rev-parse origin/master
 ```
 
-重要：推送到 GitHub 不等于 VPS 已经更新。
+重要：推送普通工作分支不会更新网站；只有 `master` 更新才会触发正式 VPS 自动部署。
 
-## 13. 发布到 VPS
+## 13. 自动发布到 VPS
 
-当前正常发布命令：
+推送或合并到 `master` 后，`.github/workflows/deploy-vps.yml` 会自动：
+
+1. Checkout 对应的 `master` commit。
+2. 安装固定版本的 Hugo Extended。
+3. 运行 `git diff --check`。
+4. 从 GitHub Secrets 加载独立的生产部署密钥和服务器 host key。
+5. 调用 `scripts/deploy-vps.sh` 构建网站。
+6. 在 `/var/www/backups/` 创建带时间戳的完整备份。
+7. 先在服务器临时目录验证构建包，再替换 `/var/www/blog` 并修正权限；替换失败时自动恢复刚创建的备份。
+8. 验证首页和 Bookshelf 的 HTTPS 响应。
+
+同一时间只允许一个 production workflow 运行，后来的部署会排队，不会中断正在替换网站的任务。可在 GitHub Actions 页面使用 `workflow_dispatch` 手动重新运行。
+
+查看正式部署：
+
+```bash
+gh run list --workflow deploy-vps.yml --branch master --limit 3
+```
+
+### 本地备用发布
+
+当 GitHub Actions 不可用，或需要从本机人工重试时运行：
 
 ```bash
 ./scripts/deploy-vps.sh
 ```
 
-脚本会自动：
+本地脚本会执行与 Actions 相同的核心发布逻辑：
 
 1. 运行生产 Hugo 构建。
 2. 删除 `.DS_Store` 和 AppleDouble 文件。
 3. 打包 `public/`。
 4. 使用 `~/.ssh/agent/69mike_vps_deploy_ed25519` 上传。
 5. 在 `/var/www/backups/` 创建带时间戳的完整备份。
-6. 替换 `/var/www/blog`。
+6. 在服务器临时目录验证构建包后替换 `/var/www/blog`；替换失败时自动恢复备份。
 7. 修正目录和文件权限。
 8. 验证首页和 Bookshelf 的 HTTPS 响应。
 
@@ -350,7 +373,7 @@ files=235
 Deployed and verified https://69mike.com/
 ```
 
-每次记录脚本返回的 `backup=` 路径。不要把文档中某一个旧备份路径当成永远最新的备份。
+每次记录 workflow 或本地脚本返回的 `backup=` 路径。不要把文档中某一个旧备份路径当成永远最新的备份。
 
 ## 14. 发布后验证
 
@@ -383,13 +406,13 @@ curl -I https://69mike.com/projects/
 curl -I https://69mike.com/bookshelf/
 ```
 
-检查 GitHub Actions：
+检查正式 VPS GitHub Actions：
 
 ```bash
-gh run list --workflow deploy.yml --branch master --limit 3
+gh run list --workflow deploy-vps.yml --branch master --limit 3
 ```
 
-当前 GitHub Pages 工作流是额外构建验证。域名 DNS 仍指向 VPS，因此 VPS 部署结果才是线上真实结果。
+`deploy.yml` 的 GitHub Pages 工作流是备用构建与镜像。域名 DNS 指向 VPS，因此 `deploy-vps.yml` 的结果才是线上真实结果。
 
 ## 15. 回滚
 
@@ -402,8 +425,9 @@ git switch master
 git pull --ff-only origin master
 git revert <bad-commit-sha>
 git push origin master
-./scripts/deploy-vps.sh
 ```
+
+推送 revert commit 后会自动重新部署。如果自动化不可用，再运行 `./scripts/deploy-vps.sh`。
 
 这种方式会保留完整历史，优先于 `git reset --hard` 或强制推送。
 
