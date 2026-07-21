@@ -10,3 +10,22 @@
 .series-entry h3 {
   font-size: 1.125rem;
 }
+
+/* Lightweight, dependency-free equations for long-form essays. */
+.post-content .essay-equation {
+  display: block;
+  max-width: 100%;
+  margin: 1.5rem auto;
+  padding: 0 0.75rem;
+  overflow-x: auto;
+  font-family: "STIX Two Text", "Times New Roman", serif;
+  font-size: clamp(1.3rem, 3.5vw, 1.65rem);
+  line-height: 1.7;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.post-content .essay-equation sub {
+  font-size: 0.65em;
+  line-height: 0;
+}
