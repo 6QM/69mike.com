@@ -142,6 +142,15 @@ menu:
 pygmentsUseClasses: true
 markup:
   goldmark:   # 这个设置会允许 Markdown 解析器渲染原始 HTML 标签。
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+            - ['\[', '\]']
+            - ['$$', '$$']
+          inline:
+            - ['\(', '\)']
+        enable: true
     renderer:
       unsafe: true # allow HTML in md files, only for bookshelf
   highlight:
