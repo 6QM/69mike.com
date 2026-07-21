@@ -4,6 +4,7 @@ date: 2026-07-20T01:24:48+08:00
 slug: "become-the-owner-of-the-problem"
 author: "Qiaomai"
 description: "从文明压缩、个人语境、坐标变换与 Problem Agency 出发，讨论普通 Worker 如何用问题意识激活 AI，把外接智能转化为可内化的人力资本与可长期积累的现实资产。"
+images: ["/images/qiaomai-avatar.jpg"]
 series: ["Human Capital ETF"]
 categories: ["Essay"]
 tags: ["AI", "human capital", "learning", "decision-making", "problem framing"]
