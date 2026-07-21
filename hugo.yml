@@ -21,7 +21,7 @@ params:
   keywords: [Blog, Essays, Projects, Human Capital ETF, The Worker Investor, Qiaomai Liu]
   author: Qiaomai Liu
   # author: ["Me", "You"] # multiple authors
-  images: ["/images/default-cover.png"]
+  images: ["/images/qiaomai-avatar.jpg"]
   DateFormat: "January 2, 2006"
   defaultTheme: light # dark, light
   disableThemeToggle: false
