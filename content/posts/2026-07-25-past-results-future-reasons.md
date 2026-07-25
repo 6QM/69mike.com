@@ -3,7 +3,7 @@ title: "向过去寻找结果，向未来寻找原因"
 date: 2026-07-25T19:28:42+08:00
 slug: "past-results-future-reasons"
 author: "Qiaomai"
-description: "从一则 2020 年的日记出发，建立一套连接过去、现在与未来的时间方法：像历史学家一样辨认已经形成的条件，像行动者一样在当下创造证据，并把劳动、经验与作品转化为 Future Optionality。"
+description: "从一则 2020 年的日记出发，建立一套连接过去、现在与未来的时间方法：像“考古学家”一样辨认已经形成的条件，像“革新者”一样在当下创造证据，并把劳动、经验与作品转化为 Future Optionality。"
 series: ["The Worker Investor"]
 categories: ["Essay"]
 tags: ["time", "agency", "optionality", "human capital", "work"]
@@ -127,29 +127,84 @@ UseHugoToc: true
 
 只有三者同时出现，未来才不只是愿望，而会成为今天的组织力量。
 
-## 五、从考古学家到行动者
+## 五、从“考古学家”到“革新者”
 
-一个成熟的人不能只做自己的历史学家。他还需要决定哪一种未来值得建设，并在当下把两者连接起来。
+人需要做自己过去的“考古学家”，从已经留下的痕迹中恢复事实，理解自己何以成为今天的样子。但只理解过去还不够。面向未来，人还需要另一种身份：“革新者”。
 
-我愿意把这三种角色称为：
+这里所说的革新者，可以用 entrepreneur 来理解。它不是狭义的“创办公司的人”，也不是简单的创新者。创新者可能提出一个新想法，革新者则必须让某种新现实开始出现。两者的区别不在想象力，而在于想法是否进入现实，改变原有的结构、行为或资源配置方式。
 
-- 历史学家：解释自己如何来到这里；
-- 战略家：决定哪一种未来值得建设；
-- 行动者：利用已经形成的条件，为那个未来创造证据。
+本文也不是要给 entrepreneur 下一个唯一的词典定义，而是借它说明 agency 在现实中的一种具象化。OECD 对 entrepreneurial activity 的界定强调，它表现为创造价值的行动，并不等同于成立某种公司；Howard Stevenson 在 HBS 长期使用的定义，强调对机会的追逐可以超出当下已经控制的资源；Saras Sarasvathy 关于 effectuation 的研究则关注，创业者如何在不可预测的环境里，从手头已有的条件出发，通过行动扩大可以控制的部分。[^6]
 
-行动者所需要的，是 agency。这个词常被简单翻译成主动性，但它并不是“我可以控制一切”的错觉。Albert Bandura 对 human agency 的讨论，恰恰把个人行动与社会结构放在同一个因果系统中：人既受到环境塑造，也能够参与塑造自己的处境。[^6]
+也可以说，一个 entrepreneur 之所以具有 entrepreneurship，不在于名片上的职位，而在于他表现出高度的 agency：识别现实中尚未解决的问题，想象一个尚未实现的未来，并主动组织资源，在不确定性中推动它逐渐成为事实。
 
-因此，agency 不是否认出生、资源、疾病、组织、制度和偶然事件的影响，而是在承认这些约束以后，继续寻找自己可以施加力量的位置。它包括解释的主动权，不完全接受别人对自己过去的定义；路径的选择权，不把当前道路视为唯一道路；行动的发起权，不永远等待外部指令和完整答案；也包括结果的承担权，接受选择会带来成本、风险与责任。
+> **让尚不存在的东西开始存在**
 
-没有 agency 时，人容易把过去当成命运，把未来当成等待。有 agency 并不意味着一定成功，而是把过去当作条件，把未来当作工程。
+这是革新者最具体的工作。
 
-工程需要证据。提出一个假设、完成一个原型、写出一篇文章、自动化一段重复流程、第一次把工资转入长期账户、向真实用户展示一项作品，这些都比“我以后想成为谁”更接近未来。因为它们已经进入现实，可以被检验、积累、修正，也可以成为下一步行动的起点。
+### 从过去发现问题
 
-> 过去的问题 + 未来的方向 + 现在的证据 = 新的历史
+革新者面对的不是已经形成的遗迹，而是尚未形成的空白，但他的起点仍然在过去。某个流程为什么始终低效？某类人为什么持续面对同一种困难？一项技术为何长期没有得到充分应用？某种服务为何始终昂贵、缓慢或不可靠？
+
+这些问题不是凭空想象出来的。它们在过去反复发生，并且持续进入现在。因此，过去为革新者提供的，首先是**问题的证据**。
+
+要改变一个问题，就得理解它怎样形成，为什么长期没有解决，过去有哪些人尝试过，他们为什么失败，哪些约束直到今天仍然存在。没有这层历史意识，所谓创新很可能只是在昂贵地重演一次旧失败。
+
+所以，一个成熟的革新者首先也是“考古学家”。他不仅看见问题，还研究问题的形成史。
+
+### 从未来获得原因，在现在创造证据
+
+只理解问题，也不足以支撑长期行动。现实中的问题近乎无限，人的生命、资源和注意力却有限。革新者不可能解决所有问题，只能选择少数值得投入的方向。
+
+未来在这里开始发挥牵引作用。一种更有效的产品、更公平的制度、更低成本的技术、更自由的工作方式，或者一种尚未被满足的生活可能，都在回答同一个问题：为什么这件事值得持续去做？
+
+未来提供的不只是目标，更是行动的理由。它使人愿意承受失败、延迟回报和长期不确定性。但未来不会物理地返回现在。真正进入现在的，是人对未来的想象、承诺和价值判断。
+
+仍然有许多人能够指出问题，也能描述理想未来，却不会因此成为革新者。革新者与观察者的区别，在于他会把愿景转化为一连串能够接触现实的动作：提出假设、制作原型、寻找资源、组织协作、接受反馈、承担失败，再根据结果修正方向。
+
+未来不能依靠想象自动出现。只有现在不断产生新的证据，未来才可能从一种愿望变成事实。
+
+> **过去的问题 + 未来的愿景 + 现在的行动 = 新的历史**
+
+### Agency：把过去当作条件，把未来当作工程
+
+这里的 agency 不是“代理机构”，也不只是性格上的积极主动。它是一个人相信自己的行动能够对现实产生作用，并愿意为这种作用承担责任的能力。
+
+Albert Bandura 对 human agency 的讨论，把个人行动与社会结构放在同一个因果系统中：人会受到环境塑造，也能够参与塑造自己的处境。[^7] 因此，高 agency 并不意味着相信自己可以控制一切。出生、资源、疾病、组织、制度、运气和他人的选择始终构成真实约束。具有 agency 的人真正相信的是：即使不能控制一切，自己的行动仍然可以改变其中一部分。
+
+这种能力至少包含四层含义：
+
+- **解释的主动权：** 不完全接受别人对自己过去的定义，可以重新研究事实，重新理解自己的形成过程；
+- **路径的选择权：** 不把眼前已有的道路视为唯一道路，承认现实是条件，却不是全部可能；
+- **行动的发起权：** 不永远等待外部指令、最佳时机或完整答案，在信息不充分时也能先发起小规模行动；
+- **结果的承担权：** 接受选择会带来成本、风险与责任，并用现实反馈修正自己的判断。
+
+> **Agency 不是否认约束，而是在约束中寻找可以施加力量的位置。**
+
+没有 agency 时，人容易把过去当成命运，把未来当成等待。具有 agency 的人，则会把过去当成条件，把未来当成工程。entrepreneur 正是这种精神进入现实后的一个具体角色：不只拥有看法，也要调动手头的时间、知识、关系、资本与工具，让看法接受现实的检验。
+
+真正的革新通常不会立刻形成结果。一个尚未出现的产品、一项尚未成熟的技术、一种尚未被接受的思想，在早期往往都缺少证据、资源和共识。革新者必须在未来还没有兑现时，持续留在现在。
+
+开始时，人被未来的愿景牵引；过程中，只能一次次采取微小甚至无人注意的行动；多年以后回看，这些曾经发生在无数个“现在”的行动，才连接成一段可以被研究的历史。
+
+> **未来的愿景 → 现在的坚持 → 过去的历史**
+
+所谓长期主义，并不是站在未来直接完成目标，而是愿意让未来的理由，持续组织今天的行动。
+
+### 向后考古，向前革新
+
+“考古学家”和“革新者”并不是两类互不相干的人。只有前一种能力，人可能非常理解过去，却缺乏创造新路径的勇气；只有后一种冲动，人又可能急于奔向未来，忽略历史已经给出的经验、约束和失败证据。
+
+> **向后考古，向前革新**
+
+“考古学家”防止我们失忆，革新者防止我们停滞。前者从痕迹中恢复形成过程，后者让尚不存在的东西开始存在，而连接两者的始终是现在的行动。
+
+一个人在现在回看过去时，是自己的“考古学家”；在现在面向未来时，是自己生命的革新者。他一边研究已经形成的自己，一边创造尚未形成的自己。
+
+过去提供条件，未来提供原因，现在则要求我们提供证据。
 
 ## 六、迷茫时，做一次三步时间诊断
 
-当我不知道下一步做什么时，可以不急着向当下索要一个完整答案，而是沿时间轴走一遍。
+对于我们每个人而言，当不知道下一步应该做什么时，不必急着向当下索要一个完整答案，而可以沿时间轴走一遍。
 
 **第一步，向后考古。** 过去真正做成过什么？哪些能力已经形成？哪些失败留下了有效判断？什么问题反复出现？哪些积累仍未被使用？这一步寻找的不是自我评价，而是可核验的存量。
 
@@ -206,4 +261,5 @@ Worker Investor 既是自己过去的考古学家，也是自己未来的建设�
 [^3]: Baruch Fischhoff，[《Hindsight ≠ Foresight: The Effect of Outcome Knowledge on Judgment Under Uncertainty》](https://doi.org/10.1037/0096-1523.1.3.288)，*Journal of Experimental Psychology: Human Perception and Performance*，1975 年，第 1 卷第 3 期，第 288–299 页。
 [^4]: Jan Peters、Christian Büchel，[《Episodic Future Thinking Reduces Reward Delay Discounting Through an Enhancement of Prefrontal-Mediotemporal Interactions》](https://pubmed.ncbi.nlm.nih.gov/20399735/)，*Neuron*，2010 年，第 66 卷第 1 期，第 138–148 页；Hal E. Hershfield 等，[《Increasing Saving Behavior Through Age-Progressed Renderings of the Future Self》](https://www.microsoft.com/en-us/research/publication/increasing-saving-behavior-through-age-progressed-renderings-of-the-future-self/)，*Journal of Marketing Research*，2011 年，第 48 卷特刊，第 S23–S37 页。
 [^5]: Gabriele Oettingen、Doris Mayer、Babette Brinkmann，[《Mental Contrasting of Future and Reality: Managing the Demands of Everyday Life in Health Care Professionals》](https://bpb-us-e1.wpmucdn.com/wp.nyu.edu/dist/c/6235/files/2019/02/oettingen-et-al-2010-mental-contrasting-of-future-and-reality.pdf)，*Journal of Personnel Psychology*，2010 年，第 9 卷第 3 期，第 138–144 页，DOI: 10.1027/1866-5888/a000018。
-[^6]: Albert Bandura，[《Toward a Psychology of Human Agency》](https://www.psychologicalscience.org/journals/perspectives/j.1745-6916.2006.00011.x/)，*Perspectives on Psychological Science*，2006 年，第 1 卷第 2 期，第 164–180 页，DOI: 10.1111/j.1745-6916.2006.00011.x。
+[^6]: OECD，[《Reader’s Guide: The Missing Entrepreneurs 2019》](https://www.oecd.org/en/publications/the-missing-entrepreneurs-2019_3ed84801-en/full-report/reader-s-guide_81440ecf.html)；Harvard Business School Baker Library，[《About This Collection》](https://www2.library.hbs.edu/special-collections-and-archives/exhibits/entrepreneurs/about-this-collection)；Saras D. Sarasvathy，[《Causation and Effectuation: Toward a Theoretical Shift from Economic Inevitability to Entrepreneurial Contingency》](https://journals.aom.org/doi/10.5465/AMR.2001.4378020)，*Academy of Management Review*，2001 年，第 26 卷第 2 期，第 243–263 页，DOI: 10.5465/AMR.2001.4378020。
+[^7]: Albert Bandura，[《Toward a Psychology of Human Agency》](https://www.psychologicalscience.org/journals/perspectives/j.1745-6916.2006.00011.x/)，*Perspectives on Psychological Science*，2006 年，第 1 卷第 2 期，第 164–180 页，DOI: 10.1111/j.1745-6916.2006.00011.x。
