@@ -218,12 +218,7 @@ Current\ Job
 
 晚上改变的是 world model，第二天控制行为的仍然是环境、日程、默认选项、已有习惯和现实约束。
 
-\[
-Old\ Environment
-+ Old\ Defaults
-+ Old\ Friction
-\rightarrow Old\ Behavior
-\]
+> **Old Environment + Old Defaults + Old Friction → Old Behavior**
 
 我把一个重要想法在 context 切换之后迅速失去行动力量的现象，称为 **Insight Decay**。这不是一个既有的心理学诊断，而是我给自己经验起的名字。
 
