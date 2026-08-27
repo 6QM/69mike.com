@@ -55,28 +55,28 @@ The Worker Investor 最深层讨论的，也许从来不是一个人应该拥有
 Worker 最熟悉的经济关系是：
 
 \[
-Labor_t \rightarrow Income_t
+\mathrm{Labor}_t \longrightarrow \mathrm{Income}_t
 \]
 
-今天工作，这个月领取工资；完成任务，得到绩效；提供劳动，获得 compensation。这是一种非常正常，也极其重要的交换关系。现代社会绝大多数人的生活，都建立在这种交换之上。
+这里的下标 \(t\) 表示同一结算期间；箭头表示典型的交换关系，而不是“所有劳动必然立刻转化为收入”的数学定理。今天工作，这个月领取工资；完成任务，得到绩效；提供劳动，获得 compensation。这是一种非常正常，也极其重要的交换关系。现代社会绝大多数人的生活，都建立在这种交换之上。
 
-但它有一个鲜明特点：劳动与回报之间的时间距离很短。工作一个月，工资结算一次；劳动停止以后，如果没有其他资产和现金流，收入也很容易随之停止。因此，一个纯粹依赖劳动收入的人，其未来收入结构接近：
+但它有一个鲜明特点：劳动与回报之间的时间距离很短。工作一个月，工资结算一次；劳动停止以后，如果没有其他资产和现金流，收入也很容易随之停止。因此，更严谨地说：在不考虑储蓄、资产收入、社会保障和他人转移支付时，主要依赖工资的人，其未来劳动收入取决于未来还能提供多少劳动，以及每单位劳动在市场上能换到多少报酬：
 
 \[
-Future\ Income \approx Future\ Labor
+Y_{\mathrm{future}} \approx w_{\mathrm{future}} \times L_{\mathrm{future}}
 \]
 
-要获得未来收入，就必须在未来继续出售时间。
+其中，\(Y_{\mathrm{future}}\) 是未来一段时期的劳动收入，\(w_{\mathrm{future}}\) 是那段时期每单位劳动所获得的报酬，\(L_{\mathrm{future}}\) 是投入的劳动量。这个式子不是对任何人的收入预测；它只用来刻画一种结构：当 \(L_{\mathrm{future}}\) 降到零，而又没有别的现金流来源时，劳动收入也会随之消失。
 
 这也是为什么 paycheck 不只是一个收入概念，它还是一种时间结构。所谓 paycheck-to-paycheck，不仅意味着银行账户里的现金储备很少，也意味着一个人的时间不断在两次工资结算之间被消耗，而没有形成足够多能够进入下一轮生产的存量。
 
 Investor 面对的则是另一套结构：
 
 \[
-Investment_{t_0} \rightarrow Waiting \rightarrow Return_{t_1,t_2,\dots}
+\mathrm{Investment}_{t_0} \longrightarrow \mathrm{Waiting} \longrightarrow \mathrm{Return}_{t_1,t_2,\dots}
 \]
 
-今天投入资本，并不意味着今天得到收益，甚至可能很长时间什么都没有发生。购买股票以后，公司不会因为你今天买入，就在今晚把十年的利润付给你；接受教育以后，也不会第二天自动得到更高收入。
+\(t_0\) 是最初投入的时点，\(t_1,t_2,\dots\) 是可能发生回报的后续时点；两个箭头只表示时间顺序，并不表示回报必然发生。今天投入资本，并不意味着今天得到收益，甚至可能很长时间什么都没有发生。购买股票以后，公司不会因为你今天买入，就在今晚把十年的利润付给你；接受教育以后，也不会第二天自动得到更高收入。
 
 Gary Becker 将教育、培训等活动系统化为 human-capital investment，正是因为资源在今天被投入，而重要影响主要发生在未来的生产率、就业与收入。[^2]
 
@@ -84,11 +84,7 @@ Gary Becker 将教育、培训等活动系统化为 human-capital investment，�
 
 今天投入 100 元，十年后可能变成 300 元，也可能只剩 50 元。今天写一篇文章，十年后可能成为一本书的基础，也可能根本没有几个人读过。今天学习一种技术，可能进入未来产业的核心，也可能几年后迅速折旧。
 
-Investor 所接受的不只是 delay，还有：
-
-\[
-Delay + Uncertainty
-\]
+Investor 所接受的不只是 delay，还有 **delay 与 uncertainty 的叠加**。
 
 这才是投资真正困难的地方。
 
@@ -101,6 +97,16 @@ Delay + Uncertainty
 \[
 PV = \frac{FV}{(1+r)^t}
 \]
+
+这是一笔**单一未来现金流**的基本折现写法。\(PV\) 是 *present value*，即今天的现值；\(FV\) 是 *future value*，即未来某一时点可收到或可实现的金额；\(r\) 是每个计息或折现期间所使用的利率／贴现率；\(t\) 是期间数。因此，若 \(r\) 使用年利率，\(t\) 就应以年计；若 \(r\) 使用月利率，\(t\) 就应以月计。
+
+例如，假设三年后可确定收到 100 元，并以每年 5% 折现，则 \(FV=100\)、\(r=0.05\)、\(t=3\)，今天的现值为：
+
+\[
+PV = \frac{100}{(1+0.05)^3} \approx 86.38
+\]
+
+这里的 86.38 元不是“未来 100 元的唯一真值”，而是建立在特定贴现率与现金流假设上的比较基准。若金额并不确定，\(FV\) 不能被当作确定数字；需要先说明不同结果的概率、预期现金流与风险所要求的报酬。把一篇文章、一次学习或一段关系直接代进这个公式，也只能是一种启发性的比喻，不能假装得到了精确估值。
 
 未来的 100 元今天值多少钱？反过来，今天的 100 元如果不消费而投入生产，未来可能变成什么？
 
@@ -139,8 +145,10 @@ Worker 常问：我的一个小时能够换多少钱？Investor 会继续问：�
 换句话说：
 
 \[
-Ownership \rightarrow Future\ Participation
+\mathrm{Ownership} \leadsto \mathrm{Future\ Participation}
 \]
+
+这里的 \(\leadsto\) 表示“可能形成一条参与路径”，不是收益保证；路径能否成立仍取决于权利内容、合同、市场和执行能力。
 
 这可能才是 The Worker Investor 中 ownership 最值得保留的含义。
 
@@ -155,8 +163,10 @@ Ownership \rightarrow Future\ Participation
 今天无法知道哪一条路径会发生：
 
 \[
-Value_{future} = ?
+V_{\mathrm{future}}
 \]
+
+这里的 \(V_{\mathrm{future}}\) 只是“未来价值”的占位符；在行动当下，它的大小、出现时间与归属都未知。
 
 但 ownership 的意义就在这里：它保留了一个权利——如果未来真的出现价值，我仍然有可能参与。
 
@@ -182,13 +192,21 @@ Value_{future} = ?
 
 **第二层：Economic or Strategic Claim。**例如长期作品形成的 reputation、公开项目形成的 proof of work、网站形成的 distribution、一套方法形成的专业识别、持续研究形成的问题优势，以及长期建立的可信关系网络。
 
-后者不一定赋予严格法律意义上的收入索取权，却能提高未来机会回到自己身上的概率。因此：
+后者不一定赋予严格法律意义上的收入索取权，却能提高未来机会回到自己身上的概率。关系网络就是一个典型例子：我不拥有任何一段关系，更不拥有关系中的人，但连接可能把原本到不了的信息和机会带回来。2022 年一项基于 LinkedIn “People You May Know” 推荐机制的研究，利用多个随机实验分析了超过 2,000 万名用户在五年中的连接与就业变化。结果支持弱关系能够促进工作流动，但效果不是越弱越好，而是存在非线性，并且因行业而异。[^6] 这说明 strategic claim 不是“认识的人越多越值钱”，而是一个人是否拥有能够跨越原有圈层、传递新信息并在需要时重新激活的连接。
+
+因此：
 
 \[
-Future\ Value \neq Ownership
+\mathrm{Potential\ Future\ Value} \neq \mathrm{Ownership}
 \]
 
 “未来可能有价值”并不足以构成 ownership。还要继续追问：未来出现价值的时候，它还能不能和我连接起来？
+
+而“能够连接”仍然不是终点。这里还少了一环：**value capture**，也就是已经出现的价值，能否通过某种机制转化成我可以使用、继续投入或重新配置的资源。
+
+David Teece 在研究技术创新时追问过一个相似的问题：为什么创造出新技术的人，最后未必是从创新中获利最多的人？他的分析把结果放在三类条件中考察：创新能否被保护或控制、创造者是否拥有商业化所需的 complementary assets，以及市场中的主导设计如何形成。[^7] 这是企业层面的理论，不能原样套在个人身上，但它提醒我：**创造价值、拥有成果与捕获价值，是三件不同的事。**
+
+一篇文章可以属于我，却没有稳定的发布地址；一个网站可以由我控制，却没有读者入口；一段代码可以写得很好，却没有许可证、文档、用户场景或继续维护的能力。作品仍然存在，署名也仍然清楚，但价值回来的路径可能在中途断掉。对个人而言，域名、邮件列表、账户控制权、许可证、合同、产品化能力、可信的合作关系和持续维护，都是让 future claim 变得可执行的 complementary assets。
 
 ## 六、一个真正有意义的 Ownership，至少要回答四个问题
 
@@ -206,6 +224,8 @@ Future\ Value \neq Ownership
 
 Attribution 不只是满足 ego。它把过去的劳动和未来的价值重新连接起来。如果 attribution 消失，未来即使产生价值，那个价值也未必能够回到原来的创造者。
 
+但署名只有在外部世界能够理解并相信时，才会成为信号。Michael Spence 的 job-market signaling 模型把招聘理解为信息不完全条件下的判断：雇主无法直接看见一个人的全部生产能力，只能依据可观察的信号形成预期。[^8] Spence 讨论的不是博客或 GitHub；把他的模型延伸到公开作品，是本文的解释。一个作品之所以可能形成信号，不是因为它“公开”两个字，而是因为别人能够检查它、理解它和判断它是否与眼前的问题有关。容易批量伪造、与真实工作无关、没有过程记录的输出，即使数量很多，也可能只是噪声。
+
 ### 3. Participation：未来价值出现时，你还能参与吗？
 
 这是 claim 真正重要的地方。股东之所以拥有企业的一部分，不只是因为名字出现在账户里，而是因为企业未来价值变化会通过某种机制与股东发生联系。
@@ -213,16 +233,18 @@ Attribution 不只是满足 ego。它把过去的劳动和未来的价值重新�
 对个人作品来说，这条路径可能更间接：
 
 \[
-Article \rightarrow Reputation \rightarrow Opportunity \rightarrow Income
+\mathrm{Article} \leadsto \mathrm{Reputation} \leadsto \mathrm{Opportunity} \leadsto \mathrm{Income}
 \]
 
 \[
-Code \rightarrow Product \rightarrow Users \rightarrow Revenue
+\mathrm{Code} \leadsto \mathrm{Product} \leadsto \mathrm{Users} \leadsto \mathrm{Revenue}
 \]
 
 \[
-Research \rightarrow Expertise \rightarrow Recognition \rightarrow Better\ Problems
+\mathrm{Research} \leadsto \mathrm{Expertise} \leadsto \mathrm{Recognition} \leadsto \mathrm{Better\ Problems}
 \]
+
+公开代码提供了一个更具体的例子。一项发表于 *Information Systems Research* 的研究追踪了三个 Apache 开源项目中的程序员，考察他们六年间的社区表现与工资。研究发现，在控制个人特征和其他工资因素后，基于 merit 的社区等级与更高工资相关，最高关联幅度约为 18%；而承担项目管理角色的人，只有在其正式工作也与 IT 管理相匹配时，才观察到额外的经济回报。[^9] 这项研究针对特定开源社区，结果也不能直接证明“贡献开源代码必然提高工资”。它真正支持的是一个更窄的判断：公开产出只有在形成可信信号，并与外部需求发生匹配时，才更可能进入回报路径。贡献数量本身不等于 participation。
 
 这些箭头不是承诺，只是需要被现实检验的假设。只要未来价值出现后，存在一条合理、合法的路径把一部分结果重新连接回来，今天的行动就拥有某种未来参与结构。
 
@@ -233,7 +255,7 @@ Research \rightarrow Expertise \rightarrow Recognition \rightarrow Better\ Probl
 一本书可以变成课程，一系列文章可以成为一本书，一段代码可能成为产品组件，一个公开研究项目可能成为职业机会，一个长期训练出的能力可能进入今天根本不存在的行业：
 
 \[
-Asset \rightarrow \{Option_1, Option_2, \dots, Option_n\}
+\mathrm{Asset} \leadsto \{\mathrm{Option}_1, \mathrm{Option}_2, \dots, \mathrm{Option}_n\}
 \]
 
 Ownership 保存的不一定是一个确定的 future；它保存的是在尚未出现的未来中选择的余地。
@@ -280,11 +302,7 @@ Context_A \rightarrow Context_B
 
 这里必须守住一个边界：如果我们说“只要未来可能有收益，现在就值得做”，显然不成立。买彩票也是对未来 jackpot 的一种 claim；一个失败概率极高、投入巨大的项目，也拥有潜在未来。
 
-Future claim 只是候选资产，不是投资理由。Investor 还必须判断：
-
-\[
-Expected\ Value,\ Probability,\ Downside,\ Opportunity\ Cost,\ Time\ Horizon
-\]
+Future claim 只是候选资产，不是投资理由。Investor 还必须判断预期价值、实现概率、下行损失、机会成本与时间跨度。它们不是同一种可以直接相加的数字，而是做取舍时必须同时看见的五个维度。
 
 一个人一天只有 24 小时。选择写文章，就意味着没有用这两个小时做别的事情；选择学习 AI，也意味着没有同时深入另一个领域；选择创业，意味着放弃另一条相对确定的现金流。
 
@@ -302,13 +320,13 @@ Expected\ Value,\ Probability,\ Downside,\ Opportunity\ Cost,\ Time\ Horizon
 
 此前我写过，[The Worker Investor](/posts/2026-07-12-worker-investor-start/)主要回答“劳动结束以后留下什么”，而 [Human Capital ETF](/posts/2026-07-12-human-capital-etf-framework/) 回答“怎样配置那个持续产生劳动成果的人”。现在可以再向前一步：Human Capital ETF 配置的是现在，而它真正购买的是未来。
 
-**Core：购买生存时间。**身体、稳定现金流、职业能力、基本认知。Core 首先解决的不是最高收益，而是：
+**Core：购买生存时间。**身体、稳定现金流、职业能力、基本认知。Core 首先解决的不是最高收益，而是尽量提高自己继续行动的概率：
 
 \[
-P(\mathrm{stay\;in\;the\;game})
+\Pr(\mathrm{remain\;able\;to\;act})
 \]
 
-如果身体垮掉、现金流断裂、基本能力失效，再好的长期计划也可能被迫清算。Core 保护的是时间本身。
+这里的 \(\Pr\) 表示 probability；它不是可以由本文算出的客观概率，而是一个风险管理目标。若身体垮掉、现金流断裂、基本能力失效，再好的长期计划也可能被迫清算。Core 保护的是时间本身。
 
 **Growth：购买未来能力。**学习 AI、编程、新技术、跨学科知识与实验性项目：
 
@@ -317,6 +335,10 @@ Present\ Learning \rightarrow Future\ Capability
 \]
 
 Growth 的价值不一定今天兑现；它购买的是尚未确定但可能出现的能力空间。
+
+但未来能力还要区分可迁移程度。Becker 对 general training 与 specific training 的区分，在这里尤其重要：有些训练能够提高一个人在许多组织中的生产率，有些知识则主要在当前公司、设备、流程或合作关系中有价值。[^2] 两者都可能值得投入；问题在于，我是否误把组织专用的熟练，当成了离开组织以后仍然完整存在的个人资产。
+
+这也改变了我理解 Growth 的方式。Growth 不是不停学习更新的东西，而是有意识地建设三类结果：能够在不同场景继续使用的 general capability；虽然依赖当前情境、但能提高当下生产率的 specific capability；以及把后者抽象、记录和重组，使其中一部分逐渐变得可迁移的能力。一个 Worker Investor 不需要拒绝 firm-specific human capital，但应该知道自己的哪些能力会跟着自己离开，哪些会在离开门禁系统、数据库和组织关系以后迅速折旧。
 
 **Distribution：把内部能力转化成外部 future claim。**文章、视频、GitHub、演讲、网站、公开项目和长期作品，把内部能力外部化。它们不保证收益，但创造 persistence、attribution、discoverability、reuse 与 future participation。Distribution 不只是“做自媒体”，而是：
 
@@ -368,13 +390,13 @@ Paycheck + Time \rightarrow Website \rightarrow Articles \rightarrow Distributio
 
 ## 十一、从工资收入到资本收入，不是一场突然的身份革命
 
-我们很容易想象：
+我们很容易把路径想象成：
 
 \[
-Salary \rightarrow Passive\ Income
+\mathrm{Salary} \longrightarrow \mathrm{Passive\ Income}
 \]
 
-然后某一天突然实现财务自由。真实世界通常不是这样。它更像一条缓慢的资本转换链：
+然后某一天突然实现财务自由。这个箭头并不自动成立；真实世界通常更像一条缓慢的资本转换链：
 
 \[
 Labor \rightarrow Paycheck \rightarrow Surplus \rightarrow Assets \rightarrow Ownership \rightarrow Returns \rightarrow Reinvestment
@@ -389,16 +411,16 @@ Labor \rightarrow Experience \rightarrow Human\ Capital \rightarrow Artifacts \r
 两条路径不断交汇。最终，一个人的收入结构可能从：
 
 \[
-Income = Labor\ Income
+\mathrm{Income} \approx \mathrm{Labor\ Income}
 \]
 
 逐渐变成：
 
 \[
-Income = Labor\ Income + Financial\ Income + Owned\ Asset\ Income
+\mathrm{Income} \approx \mathrm{Labor\ Income} + \mathrm{Financial\ Income} + \mathrm{Owned\ Asset\ Income}
 \]
 
-其中 Labor Income 完全可以存在。这也是 The Worker Investor 与许多“逃离工作”叙事之间最重要的区别。它的终点不是 *Never work again*，而是：
+这里的 \(\approx\) 表示说明性的收入来源分解，不是税务或会计意义上的完整恒等式；其中 Labor Income 完全可以存在。这也是 The Worker Investor 与许多“逃离工作”叙事之间最重要的区别。它的终点不是 *Never work again*，而是：
 
 > **Never be forced to work in only one way.**
 
@@ -416,21 +438,15 @@ Income = Labor\ Income + Financial\ Income + Owned\ Asset\ Income
 
 这就是 Future Optionality。
 
+Optionality 也不是把选项数量尽可能做大。在 real-options 理论里，一个选择之所以有价值，和不确定性、不可逆性以及未来是否会获得新信息有关；等待本身有时也有价值，因为它让投资者保留稍后扩大、收缩或放弃投入的能力。[^10] 这套理论原本研究企业资本投资，个人生命不能被简化成一组金融期权。但它提供了一个重要修正：真正的选择权必须能够被行使。
+
+如果一个机会需要我永远付出高昂的维持成本，它可能只是负担；如果一个选择只能在身体、现金流或家庭责任已经承受不起时行使，它只是纸面上的 option；如果每增加一条路径，都让我无法在任何一条路径上形成足够能力，选择数量增加反而会稀释行动。Future Optionality 因此至少要看四件事：这条路是否可进入，是否承担得起，是否可以退出，以及等待期间能否继续保留它。
+
 在[《从 Creative Monopoly 到一个人的第二张资产负债表》](/posts/creative-monopoly-second-balance-sheet/)中，我曾写过：真正的自由不是停止工作，而是不再只有一种获得收入、创造价值和安排时间的方式。
 
 现在我会把它说得更彻底一点：The Worker Investor 的终点不是从 Worker 变成一个“不工作的人”，而是从“必须工作”变成“可以选择是否工作，以及选择为什么而工作”。
 
-一个人最后当然仍然可以是 worker，甚至可以工作得比以前更多；但：
-
-\[
-Work = Choice
-\]
-
-而不再完全是：
-
-\[
-Work = Requirement
-\]
+一个人最后当然仍然可以是 worker，甚至可以工作得比以前更多；但他希望工作越来越接近一种 choice，而不再完全是唯一的 requirement。
 
 ## 十三、AI 时代，什么东西最值得留下？
 
@@ -464,10 +480,10 @@ Optionality \uparrow
 
 ## 十五、The Worker Investor 最终是一种时间转换理论
 
-现在重新看整个框架，我认为它可以被压缩成一条路径：
+现在重新看整个框架，我认为它可以被压缩成一条**方向性路径**。下面的箭头表示可能发生的转换与反馈，而不是人人必经、单向且有保证的因果链：
 
 \[
-\boxed{Worker \rightarrow Paycheck \rightarrow Allocation \rightarrow Human\ Capital \rightarrow Build \rightarrow Ownership \rightarrow Future\ Claim \rightarrow Compounding \rightarrow Capital\ Income \rightarrow Future\ Optionality}
+\boxed{\mathrm{Worker} \rightarrow \mathrm{Paycheck} \rightarrow \mathrm{Allocation} \rightarrow \mathrm{Human\ Capital} \rightarrow \mathrm{Build} \rightarrow \mathrm{Ownership} \rightarrow \mathrm{Future\ Claim} \rightarrow \mathrm{Compounding} \rightarrow \mathrm{Capital\ Income} \rightarrow \mathrm{Future\ Optionality}}
 \]
 
 其中，Time Horizon 是世界观：它决定一个人是否愿意让今天的行动由未来回答。Human Capital ETF 是配置机制：它决定有限的身体、时间、精力和注意力投向哪里。Build 是生产：它把会消失的时间转化为能够留下的结果。Ownership 是连接机制：它让今天的劳动在未来价值出现时仍有可能与自己发生关系。Transfer 是延续机制：它让知识、资本、作品与系统进入新的时间和场景。Compounding 是增长机制：上一轮留下来的成果进入下一轮，过去开始帮助现在。
@@ -509,3 +525,8 @@ Worker 出售的是一段正在消失的时间。Investor 所做的事情，则�
 [^3]: Irving Fisher，[《The Theory of Interest: As Determined by Impatience to Spend Income and Opportunity to Invest It》](https://www.econlib.org/library/YPDBooks/Fisher/fshToI.html)，Macmillan，1930；[可检索文本](https://oll.libertyfund.org/titles/fisher-the-theory-of-interest)。
 [^4]: Sanford J. Grossman、Oliver D. Hart，[《The Costs and Benefits of Ownership: A Theory of Vertical and Lateral Integration》](https://doi.org/10.1086/261404)，*Journal of Political Economy*，1986 年，第 94 卷第 4 期，第 691–719 页；Royal Swedish Academy of Sciences，[《2016 年诺贝尔经济学奖新闻稿》](https://www.nobelprize.org/prizes/economic-sciences/2016/press-release/)。本文将不完全契约理论用于个人作品的类比；该理论本身并不自动赋予个人作品以企业股权同等的法律权利。
 [^5]: U.S. Copyright Office，[《What Is Copyright?》](https://www.copyright.gov/what-is-copyright/)，以及[《What Does Copyright Protect?》](https://www.copyright.gov/help/faq/faq-protect.html)。美国规则仅作为“表达、创意与合同归属须区分”的示例，不构成针对任何司法辖区的法律建议。
+[^6]: Karthik Rajkumar、Guillaume Saint-Jacques、Iavor Bojinov、Erik Brynjolfsson、Sinan Aral，[《A Causal Test of the Strength of Weak Ties》](https://doi.org/10.1126/science.abl4476)，*Science*，2022 年，第 377 卷第 6612 期，第 1304–1310 页。研究对象和干预发生在 LinkedIn 平台，本文不把结论外推为所有关系网络的统一规律。
+[^7]: David J. Teece，[《Profiting from Technological Innovation: Implications for Integration, Collaboration, Licensing and Public Policy》](https://doi.org/10.1016/0048-7333(86)90027-2)，*Research Policy*，1986 年，第 15 卷第 6 期，第 285–305 页。本文借用 appropriability 与 complementary assets 解释个人作品的价值捕获，这属于跨层级类比。
+[^8]: Michael Spence，[《Job Market Signaling》](https://doi.org/10.2307/1882010)，*The Quarterly Journal of Economics*，1973 年，第 87 卷第 3 期，第 355–374 页。本文把其劳动力市场信号框架延伸到公开作品，不声称原文直接研究个人网站、博客或 GitHub。
+[^9]: Il-Horn Hann、Jeffrey A. Roberts、Sandra A. Slaughter，[《All Are Not Equal: An Examination of the Economic Returns to Different Forms of Participation in Open Source Software Communities》](https://doi.org/10.1287/isre.2013.0474)，*Information Systems Research*，2013 年，第 24 卷第 3 期，第 520–538 页。研究跟踪三个 Apache 项目的程序员；工资结果是控制可观察因素后的统计关联，不能理解为对所有公开代码贡献的普遍因果回报。
+[^10]: Robert S. Pindyck，[《Irreversibility, Uncertainty, and Investment》](https://www.nber.org/papers/w3307)，NBER Working Paper 3307，1990 年；Andrew B. Abel、Avinash K. Dixit、Janice C. Eberly、Robert S. Pindyck，[《Options, the Value of Capital, and Investment》](https://www.nber.org/papers/w5227)，NBER Working Paper 5227，1995 年，后发表于 *The Quarterly Journal of Economics*，1996 年，第 111 卷第 3 期，第 753–777 页。本文只借用等待、扩张与收缩的选择价值解释个人 optionality，不把企业投资模型直接等同于人生决策。
