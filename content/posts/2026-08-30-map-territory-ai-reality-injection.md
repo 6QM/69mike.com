@@ -632,12 +632,13 @@ Human 提供 Experience、Goal、Judgment 和 Taste；AI 提供 Memory、Search�
 于是：
 
 \[
-I_0
-+ \mathrm{Civilization\ Prior}
-+ \mathrm{Personal\ Context}
-+ \mathrm{Research}
-+ \mathrm{Counterargument}
-\rightarrow I_1
+\begin{aligned}
+I_1 ={}& I_0 \\
+&+ \mathrm{Civilization\ Prior} \\
+&+ \mathrm{Personal\ Context} \\
+&+ \mathrm{Research} \\
+&+ \mathrm{Counterargument}
+\end{aligned}
 \]
 
 其中：
