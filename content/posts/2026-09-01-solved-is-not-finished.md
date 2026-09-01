@@ -56,11 +56,11 @@ UseHugoToc: true
 
 因此：
 
-\[\text{Solved} = \text{Solved under assumptions}\]
+> **Solved = Solved under assumptions**
 
 而不是：
 
-\[\text{Solved} = \text{Exhausted}\]
+> **Solved ≠ Exhausted**
 
 人类面对的现实问题，必须先被压缩成一个可研究、可测量、可比较的 formulation。比如“让机器听懂人说话”，会被转化为：给定一段声学信号，预测一串文字；再给定数据集、语言范围、错误指标、算力预算和测试条件。
 
@@ -194,22 +194,11 @@ Transformer 对 NLP 研究共同体的影响，是这场张力最接近今天的
 
 研究的基本生产方式开始发生变化：
 
-\[
-\begin{aligned}
-\text{Task} &\rightarrow \text{Design a Model} \\
-&\rightarrow \text{Train}
-\end{aligned}
-\]
+> **Task → Design a Model → Train**
 
 越来越多地转向：
 
-\[
-\begin{aligned}
-\text{Pretrain a General Model} \\
-&\downarrow \\
-\text{Adapt to Many Tasks}
-\end{aligned}
-\]
+> **Pretrain a General Model → Adapt to Many Tasks**
 
 这并不意味着 Transformer 一出现，过去做 NLP 的研究者就“失业了”，也不意味着语言学、序列建模或旧方法从此错误。真正发生的是：一个新的 general method 开始重新给不同类型的知识标价。
 
