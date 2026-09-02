@@ -61,7 +61,11 @@ Andrew Ng 最近谈到了一个值得认真对待的现象。他一方面鼓励�
 LLM 改变了这一点。现在，一个人在一天之内完全可以接触过去一个月甚至一年都不会接触到的信息。于是出现了一种新的失衡：
 
 \[
-\mathrm{Information\ Intake\ Rate} \gg \mathrm{Cognitive\ Assimilation\ Rate}
+\begin{gathered}
+\mathrm{Information\ Intake\ Rate}\\
+\gg\\
+\mathrm{Cognitive\ Assimilation\ Rate}
+\end{gathered}
 \]
 
 信息进入大脑的速度，远远超过大脑真正完成 assimilation 的速度。你读懂了，觉得有道理，甚至可以继续讨论，但这并不意味着它已经成为你的能力。
@@ -88,6 +92,10 @@ MIT Media Lab 2025 年发布的一项 essay-writing 研究试图考察这种 cog
 
 因为人类文明本来就是一部不断进行 cognitive offloading 的历史。文字是外部记忆，书籍是外部知识库，数学符号把复杂关系压缩成可以操作的 representation，地图把空间信息从人的记忆中搬到纸面，计算器让人不再手算复杂乘除，计算机进一步承担大量计算，Google 又把许多事实检索外包给互联网。没有人会因此主张，为了保持人类认知能力，我们应该废除文字。
 
+2011 年，Betsy Sparrow、Jenny Liu 和 Daniel Wegner 做了四项关于互联网与记忆的实验。他们发现，当参与者预期某条信息以后还可以从电脑中找到时，对信息本身的 recall 会下降，对“应该去哪里找到它”的记忆反而会增强。[^9] 这项研究并不能证明互联网让人的整体记忆变差；它更像是在说明，人的记忆会根据外部环境重新分工：当 access 足够稳定时，记住路径有时比记住全部内容更经济。
+
+问题在于，这种分工存在边界。如果被记住的“路径”只是一个随时可能改变的 proprietary model、API 或账号，而人又没有形成判断检索结果的能力，那么 access 一旦中断，留下的就不只是遗忘，而是失去方向。我们可以把电话号码交给通讯录，却不能把“应该联系谁、对方说得是否可信、出了问题该怎样重新建立联系”也一并交出去。
+
 真正的问题从来不是能不能把 cognition 外包，而是：**哪些 cognition 可以外包，哪些 cognition 一旦完全外包，人就失去了自主性？** 这才是 AI 时代真正困难的问题。
 
 ## 四、Human Capital 必须被重新拆成 AI-on 与 AI-off
@@ -98,10 +106,18 @@ MIT Media Lab 2025 年发布的一项 essay-writing 研究试图考察这种 cog
 
 第二层可以叫 **AI-off Human Capital**：当 AI 不存在时，你还能够理解多少、判断多少、重建多少？这并不要求一个人回到 1990 年工作。它真正考察的是 independence：如果模型给出一个荒谬的结论，你是否知道哪里可能有问题？如果系统崩溃，你是否大致知道应该从哪里开始查？如果新模型替代旧模型，你能否迅速重新学习？如果某个 framework 消失，你是否仍理解 underlying mechanism？如果 AI 无法进入某个领域，你还有没有能力进入它？
 
+2026 年，Anthropic 的研究者用一个学习新 Python library 的任务，对软件开发者做了一项随机对照实验。使用 AI 的参与者在随后的概念测试中平均低了 17%，相当于接近两个 letter grades；AI 组完成任务稍快，但速度差异没有达到统计显著。更值得注意的是，使用 AI 并不必然带来较低成绩：表现较好的参与者往往会追问解释、提出 conceptual question，或者让 AI 辅助理解而不是直接包办。[^10] 这项研究样本较小，只测量了任务结束不久后的理解，不能回答长期能力变化，但它把 AI-on 与 AI-off 的差别放进了一个很具体的工作场景：代码可以更快出现，理解却不一定以同样速度出现。
+
 于是可以把 AI 时代的 Human Capital 暂时写成：
 
 \[
-\mathrm{Human\ Capital} = \mathrm{Internal\ Capability} + \mathrm{AI\ Leverage} + \mathrm{Judgment} + \mathrm{Learning\ Velocity}
+\begin{gathered}
+\mathrm{Human\ Capital}\\
+= \mathrm{Internal\ Capability}\\
+{}+ \mathrm{AI\ Leverage}\\
+{}+ \mathrm{Judgment}\\
+{}+ \mathrm{Learning\ Velocity}
+\end{gathered}
 \]
 
 这不是一个可精确计算的经济学公式，而是一张个人能力的检查表。其中任何一项单独最大化都不是最优解。只有 internal capability，没有 AI leverage，你可能非常扎实，但 productivity 太低；只有 AI leverage，没有 internal capability，你可能极其高效，却异常脆弱；没有 judgment，你甚至不知道模型什么时候错了；没有 learning velocity，当技术栈发生变化，你掌握的具体工具又会迅速折旧。
@@ -170,6 +186,10 @@ Buffett 又完全不同。他的 territory 不是火箭或者 typography，而�
 
 AI 会把这个风险进一步放大，因为 AI 实在太擅长生产漂亮的 map。
 
+1986 年的 Challenger 调查提供了一个极端但清楚的例子。听证会上，Richard Feynman 把一小段 O-ring 材料用夹具压住，放进冰水，再展示它在低温下无法迅速恢复形状。复杂的可靠性判断、管理流程和发射叙事，突然被一小块橡胶拉回物理世界。NASA 保存的调查材料也显示，工程师与管理层对灾难性失败概率的估计曾相差几个数量级，而把“以前这样飞过也没有失败”当作继续接受风险的理由，会让标准在不知不觉中下降。[^11]
+
+这个故事的重要性不在于“一个聪明人用简单实验战胜了复杂组织”，而在于它展示了 Reality Contact 的功能：让一个可以被不断解释的争论，重新面对一个不能被修辞改变的约束。对于技术，材料最终有否决权；对于产品，用户有否决权；对于投资，长期现金流有否决权。
+
 ## 九、Token → Map → System → Territory
 
 我们可以进一步把现代社会分成四层：
@@ -181,6 +201,10 @@ AI 会把这个风险进一步放大，因为 AI 实在太擅长生产漂亮的 
 > **System**：company、software、factory、supply chain、institution、product。Map 在这里被组织起来，开始持续产生行为。
 >
 > **Territory**：people、body、time、material、energy、natural law、human needs。真正的现实最终在这里发生。
+
+2016 年 Wells Fargo 的销售丑闻，正好展示了这四层怎样发生错位。美国消费者金融保护局的调查发现，为了满足销售目标并获得激励，一些员工在客户不知情或未同意的情况下开设账户、申请银行卡或开通服务。[^12] 销售数字原本只是帮助管理业务的 token；当整个 system 开始围绕数字本身优化时，dashboard 上的“增长”却对应着 territory 里真实客户的损失、困扰与信任崩塌。
+
+所以 token 并不虚假，metric 也并非不该存在。危险发生在代理指标不再接受底层现实校准的时候：组织以为自己在增加客户关系，实际上只是在增加账户数量；个人以为自己在增加学习，实际上只是在增加完成的对话和生成的文档。
 
 所以金钱当然不是“假的”，股票也不是电子游戏里的金币。它们之所以有价值，正是因为这些 token 最终拥有对 territory 的 claim。钱可以购买时间、能源、labor、factory、computation、土地和人的 attention。
 
@@ -212,6 +236,10 @@ Build 更深层的含义是：**通过自己的 agency，使一个原本不存�
 
 AI 可以承担越来越多 micro-operation，但它并没有因此自动成为这个 process 的 owner。因为真正的 builder 仍然需要选择问题、决定目标、承担 trade-off、面对 constraints、判断结果、承担后果，并决定下一次 iteration。
 
+想象 AI 在一个下午生成了一套工厂维护排程工具。代码能运行，界面也完整，但“建成”远没有发生：传感器出现坏值时该相信谁？计划停机和意外停机的成本怎样比较？谁可以覆盖自动排程？一次错误会只是晚几个小时，还是造成安全事故？现场人员愿不愿意改变原来的工作流？这些问题不是代码生成之后的边角料，它们才决定一个 software artifact 能否成为现实中可靠运转的 system。
+
+因此，AI 生成的是大量可供选择的 map；builder 的责任，是让其中一张地图经受现场、用户、成本和后果的检验。项目最终失败时，不能用“代码是模型写的”撤销责任；项目真正创造价值时，也不是因为文件夹里多了多少代码，而是因为某个现实约束被解决了。
+
 所以，AI 时代真正被 commoditize 的，很可能不是 Build 本身，而是 Build 中的大量 execution。一旦 execution 越来越便宜，价值就会向上游移动：What should be built? Why should it exist? For whom? Under what constraints? Who decides when it is good enough? Who owns it? Who is responsible when it fails?
 
 ## 十二、假设整个文明都获得了 ChatGPT，然后突然被拔掉
@@ -232,6 +260,8 @@ Electricity 已经成为 infrastructure，互联网也是。AI 最终也可能�
 
 越来越多系统会默认假设它存在：教育默认 AI tutor 存在，程序员默认 agent 存在，企业默认 autonomous workflow 存在，政府默认 AI planning 存在，科学研究默认 AI research assistant 存在，个人默认 personal AI 存在。整个文明围绕它重新组织，生产率变得非常高。
 
+一种技术是否成为 substrate，关键不只在于人们使用它多频繁，而在于其他制度是否已经按照“它永远在线”的前提重新设计。一个团队如果只是给原来的工程师增加 AI，工具失效时至多暂时变慢；如果团队已经取消训练路径、减少专业岗位、删除旧流程，并把知识只保存在 agent workflow 里，那么关闭 AI 并不会让组织自动恢复到从前。旧能力不是待机状态，而是已经被组织结构淘汰了。
+
 但与此同时，它也可能悄悄积累一种以前没有出现过的 vulnerability：文明还会使用系统，却越来越少有人知道，这个系统在没有 AI 的情况下应该怎样被重建。
 
 ## 十四、如果这时候 API 被切断，会发生什么？
@@ -242,6 +272,10 @@ Electricity 已经成为 infrastructure，互联网也是。AI 最终也可能�
 
 于是整个文明才会真正看见一个过去被隐藏起来的变量：**Civilizational Cognitive Reserve**，也就是当外部智能基础设施失效以后，一个文明仍然能够理解、维护、修复和重建关键系统的能力。
 
+美国海军学院对 celestial navigation 的处理，是一个很好的现实缩影。天文导航曾从课程中退出：NROTC 在 2000 年停止教授，海军学院在 2006 年移除。2015 年，它又被重新纳入海军学院课程。海军给出的理由不是怀念六分仪，而是电子导航可能受到系统退化、断电、卫星故障和 cyber threat 的影响。[^13] GPS 仍然是效率更高、精度更好的主系统；看星星定位的价值，则是在主系统不可用时，舰船仍保留一种独立接近答案的方法。
+
+这正是 Cognitive Reserve 与拒绝技术的区别。保留 reserve 不是要求每天都用低效方式工作，而是有意识地保存少量人员、知识、工具和演练，使“第二条路”不只存在于历史书里。
+
 这与银行的 capital reserve、国家的 strategic petroleum reserve、工程系统里的 redundancy 很相似。平时看起来没有效率，真正发生 failure 时，才知道它为什么存在。
 
 ## 十五、文明还可能积累一种 Interpretability Debt
@@ -249,6 +283,10 @@ Electricity 已经成为 infrastructure，互联网也是。AI 最终也可能�
 还有一个更危险的问题。假设 AI 不只是帮助我们写代码，它进一步帮助我们设计下一代 chip、compiler、模型架构、机器人、电网、金融系统，以及新的 AI。几代以后，人类可能面对一些依然正常运行的系统，却没有任何一个单独的人真正理解它们的全貌。
 
 这可以叫 **Interpretability Debt**：系统是可运行的，但越来越难以解释，也越来越难以 reconstruction。
+
+这里的 Interpretability Debt 是我借用 technical debt 提出的延伸概念，并不是一个已经拥有统一定义的学术指标。2015 年，Google 的研究者在 *Hidden Technical Debt in Machine Learning Systems* 中指出，真实 ML 系统里的模型代码往往只占很小一部分，周围还有数据收集、验证、配置、监控和 serving infrastructure；更难处理的债务来自纠缠的数据依赖、隐藏反馈、未声明的使用者，以及外部世界的变化。[^14] 系统今天运行正常，并不意味着后来的人知道某个 signal 为什么存在、谁在依赖它，或者修改之后会触发什么连锁反应。
+
+把这个问题放大到文明层面，债务就不只在软件里，也在组织记忆里。文档可能仍在，却没有人能判断哪些假设已经过期；模型能够给出设计，却没有团队能独立验证边界条件；系统可以被重启，却不能从 first principles 重新说明它为什么安全。可运行、可维护、可解释、可重建，是四个不同的层次。
 
 最极端的情况甚至会出现一个 recursive dependency：人类需要 AI 才能理解如何制造 AI。那么当 AI substrate 被破坏后，文明不是简单地“重新写一下程序就行了”，因为用来重建 AI 所需要的认知能力本身，也已经被 offload 给 AI。
 
@@ -264,6 +302,10 @@ Electricity 已经成为 infrastructure，互联网也是。AI 最终也可能�
 
 > **Redundancy looks inefficient until the primary system fails.**
 
+自动化研究很早就发现了这里的悖论。Lisanne Bainbridge 在 1983 年的 *Ironies of Automation* 中指出，自动化并不会简单消除人的问题；经典设计常把正常操作交给机器，却把机器无法处理的异常状态留给人。[^15] 于是，人只在最困难、最少见的时候被叫回来接管，而日常自动化又减少了他练习、观察和形成情境感的机会。系统越可靠，这个矛盾反而可能隐藏得越久。
+
+AI 把同一个问题带进知识工作：平时由模型生成方案，只有在模型犯下隐蔽错误时才要求人类表现出专家判断。但如果判断本身长期没有被使用，所谓 human in the loop 可能只剩流程图上的一个方框。真正的 redundancy 必须被维护；一个从不演练、没有信息、也没有否决能力的 backup，并不是真正的 backup。
+
 所以，AI 时代也许需要一种新的 redundancy：**Cognitive Redundancy**。它不是要求所有人重复学习同样的知识，而是说，一个成熟的文明不能允许所有关键能力都只有一种实现方式：call the model。
 
 ## 十七、我们这一代人可能恰好是一种 Bridge Generation
@@ -273,6 +315,8 @@ Electricity 已经成为 infrastructure，互联网也是。AI 最终也可能�
 我们知道没有 ChatGPT 的时候，查资料是什么感觉；知道软件以前怎么开发；知道 essay 曾经怎么写；知道没有 GPS 时，人怎样认路。同时，我们又拥有 AI 的 leverage。
 
 如果未来真的出现 infrastructure disruption，这种 bridge generation 反而可能具有一种奇怪的价值：它既知道旧世界怎么运行，又知道新世界为什么更快。
+
+但一代人的亲身记忆不能自动变成文明的 reserve。人会退休，技能会生疏，旧设备会消失，曾经“大家都知道”的做法也会变成无人能读的档案。真正有价值的 bridge，必须把 tacit knowledge 转换成可以传递的东西：清楚的原理、开放的格式、可离线保存的资料、能够实际运行的旧流程、跨代训练，以及定期发生的恢复演练。历史只有在必要时还能被调用，才不只是 nostalgia。
 
 这种历史经验最终也会消失。就像今天已经很少有人知道，一座现代城市如果没有电网、互联网和全球 supply chain，究竟应该怎样维持。所以 History 在这里再次显出意义。它保存的不只是“过去发生过什么”，而是：**人类曾经还有哪些不同的 ways of doing things。**
 
@@ -292,6 +336,8 @@ Electricity 已经成为 infrastructure，互联网也是。AI 最终也可能�
 >
 > 我可以让 AI 写第一版，但最终承担结论和后果的人仍然是我。
 
+“Own the loop”也需要几个真实的 control point：在问 AI 之前，我能否先说清目标与约束；收到答案之后，我能否检查 evidence，而不只检查语气是否流畅；结果进入现实之前，我能否设计测试、寻找反例并保留否决权；结果造成影响之后，我是否仍然愿意署名并承担责任。如果这几个位置都已经让出去，那么即使人还在不断输入 prompt，也未必仍然拥有这个 loop。
+
 这种关系不是 AI replaces me，也不是 I reject AI，而是：**I own the loop.**
 
 ## 十九、这可能才是 Human Capital ETF 在 AI 时代真正应该保护的“本金”
@@ -302,6 +348,10 @@ Core 不应该只理解成健康、职业和现金流。它还有一个很深的
 
 Distribution 不只是“发内容”，而是把 internal model 变成 public artifact，让现实、市场、读者和用户来检验它。Meta 也不只是提高 productivity，它应该持续追问：我到底在增长能力，还是只在增长 output？哪些事情 AI 已经替我做得很好？哪些东西我虽然做出来了，却还没有真正理解？哪些知识只需要 Access？哪些必须具备 Regeneration？哪些 cognitive debt 正在积累？
 
+可以想象两个 worker 都借助 AI 做出了同样的 prototype。第一个人交付以后只留下结果；第二个人还留下了系统图、关键 trade-off、失败记录、可重复的测试，以及一篇能够接受外部批评的说明。短期看，两个人的 output 可能相同；放进 Human Capital ETF 里，他们积累的资产却不同。后者把一次任务同时转化成了 Core 中的判断基础、Growth 中的可迁移能力、Distribution 中的公开资产，以及 Meta 中对自己工作方式的反馈。
+
+这不是要求每一次工作都写成教材，而是提醒自己：output 只有被提炼、检验和保留下来，才更可能从一次性劳动转化为 human capital。否则 AI 提高的也许只是 throughput，而不是本金。
+
 ## 二十、The Worker Investor 投资的，最终不是知识，而是 Optionality
 
 这样一来，The Worker Investor 的问题也会变得更加清晰。一个 worker 为什么还要学习？不是为了把所有知识存进脑子。为什么要学 AI？不是为了追逐最新工具。为什么要 build？不是为了证明自己会代码。为什么要写作？也不只是为了发表内容。
@@ -309,6 +359,8 @@ Distribution 不只是“发内容”，而是把 internal model 变成 public a
 最终是在投资 **Future Optionality**。Optionality 不是“我知道未来会发生什么”。恰恰相反，它意味着：因为我不知道未来发生什么，所以我要让自己在不同未来中都拥有重新行动的能力。
 
 AI 继续高速进步，我能利用它；AI 工具发生替换，我能重新学习；某个职业消失，我拥有 transferable capability；某个平台失效，我仍然拥有 audience、作品或者 ownership；某个 software 被淘汰，我理解 underlying mechanism；某个答案消失，我还拥有 regenerate answer 的能力。
+
+Optionality 因此不主要存在于“我押中了哪一个模型”，而存在于不同层之间的可迁移性。具体 prompt 会折旧，某个产品界面会改变，今天领先的 agent 也可能被替代；但问题领域的理解、判断证据的标准、与真实用户建立的信任、自己拥有的作品和把新工具接入旧目标的能力，可以穿过这些更替。真正的 option 不是永远守着一条旧路，而是在路消失以后仍有能力换路。
 
 这是一种比“掌握某项技能”更深的 Human Capital。
 
@@ -321,6 +373,10 @@ AI 继续高速进步，我能利用它；AI 工具发生替换，我能重新�
 如果这些能力正在增长，那么 AI 并没有简单地把 cognition 从你身上拿走。它可能改变了 cognition 存放的位置与形态。
 
 但与此同时，也应该警惕另一件事：不要因为 AI-on capability 飞速增长，就误以为 AI-off capability 也同步增长了。这两条曲线应该分别观察。
+
+怎样观察？对于真正重要的新能力，我可以偶尔做四个很朴素的测试：**Reconstruct**——关掉 AI，用空白页重画核心结构；**Diagnose**——面对一个故意放进去的错误，不先索要新答案，而是解释它为什么错；**Transfer**——改变一个约束，看同一原理还能不能用；**Build**——做出一个最小版本，让真实数据、用户或运行结果来拒绝它。学习研究长期发现，主动从记忆中提取，而不只是重复阅读，可以显著改善之后的保持；2008 年一项 *Science* 研究也表明，在其外语词汇学习任务中，反复 retrieval 对延迟测试尤其重要。[^16]
+
+这不意味着每个 API 都要闭卷考试。它只是给“我好像已经理解了”增加一次抽样检查。AI 可以继续承担大量 access，少数高价值的 causal model 和 failure model 则要定期被取回、使用并接受现实检验。
 
 ## 二十二、不要只学会在地图上赢
 
@@ -356,3 +412,11 @@ The Worker Investor 最终投资的，也许正是这种能力：不是让自己
 [^6]: Knowledge at Wharton，[《Harnessing the Sun and Outer Space: Elon Musk’s Sky-high Vision》](https://knowledge.wharton.upenn.edu/article/harnessing-the-sun-and-outer-space-elon-musks-sky-high-vision/)，University of Pennsylvania，2009。
 [^7]: Berkshire Hathaway，[《Owner’s Manual》](https://www.berkshirehathaway.com/1996ar/manual.html)，1996 Annual Report；相关 discounted cash-flow 表述亦见 Warren E. Buffett，[《Chairman’s Letter – 1992》](https://www.berkshirehathaway.com/letters/1992.html)。
 [^8]: Alfred Korzybski，*Science and Sanity: An Introduction to Non-Aristotelian Systems and General Semantics*，1933，p. 58；原文节选与出处见 Institute of General Semantics，[《The Map is Not the Territory》](https://generalsemantics.org/event-4967707)。
+[^9]: Betsy Sparrow、Jenny Liu、Daniel M. Wegner，[《Google Effects on Memory: Cognitive Consequences of Having Information at Our Fingertips》](https://doi.org/10.1126/science.1207745)，*Science*，Vol. 333, No. 6043，2011，pp. 776–778。
+[^10]: Judy Hanwen Shen、Alex Tamkin，[《How AI assistance impacts the formation of coding skills》](https://www.anthropic.com/research/AI-assistance-coding-skills)，Anthropic Research / arXiv:2601.20245，2026 年 1 月 29 日。
+[^11]: Presidential Commission on the Space Shuttle Challenger Accident，[《Personal Observations on Reliability of Shuttle》](https://www.nasa.gov/history/rogersrep/v2appf.htm)，Richard P. Feynman，Rogers Commission Report, Vol. 2, Appendix F，1986；O-ring 冰水演示亦见 NASA，[《Power to Explore: A History of Marshall Space Flight Center, 1960–1990》](https://www.nasa.gov/wp-content/uploads/2023/02/sp-4313.pdf)，NASA SP-4313，1999。
+[^12]: Consumer Financial Protection Bureau，[《Written Testimony of Richard Cordray Before the Senate Committee on Banking, Housing, and Urban Affairs》](https://www.consumerfinance.gov/archive/newsroom/written-testimony-richard-cordray-director-cfpb-senate-committee-banking-housing-and-urban-affairs/)，2016 年 9 月 20 日。
+[^13]: U.S. Navy，[《Charting a New Course: Celestial Navigation Returns to USNA》](https://www.navy.mil/Press-Office/News-Stories/display-news/Article/2264003/charting-a-new-course-celestial-navigation-returns-to-usna/)，2015 年 10 月 15 日。
+[^14]: D. Sculley、Gary Holt、Daniel Golovin 等，[《Hidden Technical Debt in Machine Learning Systems》](https://proceedings.neurips.cc/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html)，*Advances in Neural Information Processing Systems 28*，2015。
+[^15]: Lisanne Bainbridge，[《Ironies of Automation》](https://doi.org/10.1016/0005-1098(83)90046-8)，*Automatica*，Vol. 19, No. 6，1983，pp. 775–779。
+[^16]: Jeffrey D. Karpicke、Henry L. Roediger III，[《The Critical Importance of Retrieval for Learning》](https://doi.org/10.1126/science.1152408)，*Science*，Vol. 319, No. 5865，2008，p. 966。
