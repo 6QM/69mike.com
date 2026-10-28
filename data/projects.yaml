@@ -1,17 +1,17 @@
 - id: the-worker-investor
   priority: 1
   name: The Worker Investor
-  status: Writing in progress
+  status: Reading edition available · Ongoing revisions
   question: How can an ordinary worker change their future?
   positioning: How workers build financial optionality.
-  external_url: https://theworkerinvestor.com
+  external_url: https://github.com/6QM/workerinvestor
   series_url: /series/the-worker-investor/
   book_cover: /images/bookcover-for-bookshelf/the-worker-investor-light.png
   book_subtitle: From Labor to Ownership. Building Future Optionality.
   series_summary: 关于工作、工资、资产与未来选择权的持续写作。
   origin: 源于我对工资、劳动时间和投资亏损的重新思考。工作提供现金流和现实训练，但一个人的未来不应该永久依赖单一工资与唯一职业路径。
-  description: The Worker Investor 是一本正在写作的书，也是一个长期研究项目。它讨论一个仍然处于工作系统中的普通人，如何把工资、技能、经验、知识和作品逐渐转化为资产，并由此增加未来选择权。它不鼓励立即逃离工作，而是研究如何让今天的劳动成果在未来继续为自己工作。
-  website_label: 访问独立网站
+  description: The Worker Investor 是一本持续写作与修订的书，也是一个长期研究项目。2026 年 10 月 14 日已公开 421 页完整中文阅读版，可免费阅读和下载。它讨论一个仍然处于工作系统中的普通人，如何把工资、技能、经验、知识和作品逐渐转化为资产，并由此增加未来选择权。它不鼓励立即逃离工作，而是研究如何让今天的劳动成果在未来继续为自己工作。
+  website_label: 阅读与下载完整中文版
   series_label: 阅读系列文章
 
 - id: human-capital-etf
