@@ -150,13 +150,13 @@ Brian “Beej Jorgensen” Hall 在自己的网站上完整公开了《Beej’s 
 
 ## 参考资料
 
-[^1]: Linda Argote、Sara L. Beckman、Dennis Epple，[《The Persistence and Transfer of Learning in Industrial Settings》](https://pubsonline.informs.org/doi/10.1287/mnsc.36.2.140)，*Management Science*，36(2)，1990，140–154。
+[^1]: Linda Argote、Sara L. Beckman、Dennis Epple，[《The Persistence and Transfer of Learning in Industrial Settings》](https://pubsonline.informs.org/doi/10.1287/mnsc.36.2.140)，*Management Science*，36(2)，1990，140–154。[论文全文（圣何塞州立大学）](https://strategy.sjsu.edu/www.stable/pdf/Argote%2C%20L%2C%20S%20Beckman%20and%20D%20Epple%2C%201990%2C%20Management%20Science.%2036%282%29%20pp%20140-154.pdf)。
 [^2]: Hannah Arendt，[《The Human Condition》](https://doi.org/10.7208/chicago/9780226924571.001.0001)，University of Chicago Press，初版 1958。另见 *Stanford Encyclopedia of Philosophy* 的 [Hannah Arendt 条目](https://plato.stanford.edu/entries/arendt/)。
-[^3]: Ikujiro Nonaka，[《A Dynamic Theory of Organizational Knowledge Creation》](https://pubsonline.informs.org/doi/10.1287/orsc.5.1.14)，*Organization Science*，5(1)，1994，14–37。另见 Ikujiro Nonaka、Hirotaka Takeuchi、Katsuhiro Umemoto，[《A Theory of Organizational Knowledge Creation》](https://www.inderscience.com/info/inarticle.php?artid=25472)，*International Journal of Technology Management*，11(7–8)，1996，833–845。
+[^3]: Ikujiro Nonaka，[《A Dynamic Theory of Organizational Knowledge Creation》](https://pubsonline.informs.org/doi/10.1287/orsc.5.1.14)，*Organization Science*，5(1)，1994，14–37。[论文全文（伊利诺伊大学）](https://josephmahoney.web.illinois.edu/BA504_Fall%202008/Uploaded%20in%20Nov%202007/Nonaka%20%281994%29.pdf)。另见 Ikujiro Nonaka、Hirotaka Takeuchi、Katsuhiro Umemoto，[《A Theory of Organizational Knowledge Creation》](https://www.inderscience.com/info/inarticle.php?artid=25472)，*International Journal of Technology Management*，11(7–8)，1996，833–845。
 [^4]: David J. Teece，[《Profiting from Technological Innovation: Implications for Integration, Collaboration, Licensing and Public Policy》](https://doi.org/10.1016/0048-7333%2886%2990027-2)，*Research Policy*，15(6)，1986，285–305。[论文全文](https://www.edegan.com/pdfs/ERBC/Stern%2C%205.28.11/Teece_1986.pdf)。
 [^5]: 世界知识产权组织（WIPO），[《What Can I Protect with a Copyright?》](https://www.wipo.int/en/web/copyright/protection)，参见表达和思想的保护范围。
 [^6]: [《中华人民共和国著作权法》（2020 年修正）](https://ipc.court.gov.cn/zh-cn/news/view-6244.html)，参见第十条和第十八条。
-[^7]: Paul M. Romer，[《Endogenous Technological Change》](https://www.journals.uchicago.edu/doi/10.1086/261725)，*Journal of Political Economy*，98(5, Part 2)，1990，S71–S102。
+[^7]: Paul M. Romer，[《Endogenous Technological Change》](https://www.journals.uchicago.edu/doi/10.1086/261725)，*Journal of Political Economy*，98(5, Part 2)，1990，S71–S102。[作者网站所载全文](https://paulromer.net/posts/2015/pdf/Endogenous.pdf)。
 [^8]: Pew Research Center，[《When Online Content Disappears》](https://www.pewresearch.org/data-labs/2024/05/17/when-online-content-disappears/)，2024 年 5 月 17 日。另见[抽样及可访问性判定方法](https://www.pewresearch.org/data-labs/2024/05/17/methodology-link-rot/)。
 [^9]: Brian “Beej Jorgensen” Hall，[《Beej’s Guide to Network Programming》](https://beej.us/guide/bgnet/)及[在线教程 3.3.3 版](https://beej.us/guide/bgnet/html/)，参见前言与第 1.9 节的许可条款。
 [^10]: Julia Evans，[《How (and why) I made a zine》](https://jvns.ca/blog/2016/08/29/how-i-made-a-zine/)，2016 年 8 月 29 日。
